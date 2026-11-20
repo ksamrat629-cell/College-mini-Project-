@@ -13,22 +13,25 @@ def compute_department_throughput(df: pd.DataFrame) -> pd.DataFrame:
     if df.empty or "department_name" not in df.columns:
         return pd.DataFrame()
 
+    rev_col = None
+    for cand in ["net_billed_amount", "final_amount", "gross_billed_amount", "total_bill_amount"]:
+        if cand in df.columns:
+            rev_col = cand
+            break
+
     agg_dict = {
         "visit_id": "count",
         "wait_time_minutes": ["mean", "median"],
         "is_sla_breach": ["sum", lambda x: (x.sum() / len(x) * 100.0) if len(x) > 0 else 0.0]
     }
+    cols = ["total_visits", "mean_wait_time", "median_wait_time", "sla_breach_count", "sla_breach_rate_pct"]
     
-    if "final_amount" in df.columns:
-        agg_dict["final_amount"] = "sum"
-    elif "total_bill_amount" in df.columns:
-        agg_dict["total_bill_amount"] = "sum"
+    if rev_col:
+        agg_dict[rev_col] = "sum"
+        cols.append("total_revenue")
 
     grouped = df.groupby("department_name").agg(agg_dict)
-    grouped.columns = [
-        "total_visits", "mean_wait_time", "median_wait_time",
-        "sla_breach_count", "sla_breach_rate_pct", "total_revenue"
-    ]
+    grouped.columns = cols
     grouped["mean_wait_time"] = grouped["mean_wait_time"].round(1)
     grouped["median_wait_time"] = grouped["median_wait_time"].round(1)
     grouped["sla_breach_rate_pct"] = grouped["sla_breach_rate_pct"].round(1)
@@ -152,21 +155,27 @@ def compute_revenue_payer_mix(df: pd.DataFrame) -> dict:
     if df.empty:
         return {"gross_revenue": 0.0, "net_revenue": 0.0, "discount_total": 0.0, "avg_rev_per_visit": 0.0, "payer_df": pd.DataFrame()}
         
-    gross = float(df["total_bill_amount"].sum()) if "total_bill_amount" in df.columns else 0.0
+    gross_col = "gross_billed_amount" if "gross_billed_amount" in df.columns else ("total_bill_amount" if "total_bill_amount" in df.columns else None)
+    net_col = "net_billed_amount" if "net_billed_amount" in df.columns else ("final_amount" if "final_amount" in df.columns else None)
+    payer_col = "payer_type" if "payer_type" in df.columns else ("payer_category" if "payer_category" in df.columns else None)
+
+    gross = float(df[gross_col].sum()) if gross_col else 0.0
     discounts = float(df["discount_amount"].sum()) if "discount_amount" in df.columns else 0.0
-    net = float(df["final_amount"].sum()) if "final_amount" in df.columns else (gross - discounts)
+    net = float(df[net_col].sum()) if net_col else (gross - discounts)
     total_visits = len(df)
     avg_rev = round(net / total_visits, 2) if total_visits > 0 else 0.0
     
     payer_summary = pd.DataFrame()
-    if "payer_category" in df.columns:
-        payer_summary = df.groupby("payer_category").agg(
-            encounters=("visit_id", "count"),
-            total_amount=("final_amount", "sum") if "final_amount" in df.columns else ("total_bill_amount", "sum")
-        ).reset_index()
-        total_payer_amt = payer_summary["total_amount"].sum()
-        payer_summary["percentage"] = (payer_summary["total_amount"] / total_payer_amt * 100.0).round(1) if total_payer_amt > 0 else 0.0
-        payer_summary["total_amount"] = payer_summary["total_amount"].round(2)
+    if payer_col:
+        amt_col = net_col if net_col else gross_col
+        if amt_col:
+            payer_summary = df.groupby(payer_col).agg(
+                encounters=("visit_id", "count"),
+                total_amount=(amt_col, "sum")
+            ).reset_index()
+            total_payer_amt = payer_summary["total_amount"].sum()
+            payer_summary["percentage"] = (payer_summary["total_amount"] / total_payer_amt * 100.0).round(1) if total_payer_amt > 0 else 0.0
+            payer_summary["total_amount"] = payer_summary["total_amount"].round(2)
         
     return {
         "gross_revenue": round(gross, 2),
