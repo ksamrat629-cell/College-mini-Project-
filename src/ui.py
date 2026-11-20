@@ -2,6 +2,21 @@ import textwrap
 import streamlit as st
 import streamlit.components.v1 as components
 
+def render_html_block(html_content: str, sidebar: bool = False):
+    """
+    Renders pure HTML/CSS natively via st.html (or st.sidebar.html) to completely
+    bypass Markdown parsers and ensure no raw code blocks ever appear on screen.
+    """
+    target = st.sidebar if sidebar else st
+    # Ensure every single line has zero leading indentation
+    clean_lines = [line.lstrip() for line in html_content.strip().splitlines()]
+    clean_html = "\n".join(clean_lines)
+    if hasattr(target, "html"):
+        target.html(clean_html)
+    else:
+        target.markdown(clean_html, unsafe_allow_html=True)
+
+
 def apply_custom_css():
     """
     Injects executive-grade modern CSS into the Streamlit DOM.
@@ -11,7 +26,7 @@ def apply_custom_css():
     - Modern Glassmorphism Cards, Hover Transitions, and Micro-interactions
     - Polished Tab Navigation, Buttons, Metric Badges, and Alert Banners
     """
-    custom_css = textwrap.dedent("""
+    custom_css = """
     <style>
     /* 1. Global Typography & Canvas */
     @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap');
@@ -216,8 +231,8 @@ def apply_custom_css():
         overflow: hidden !important;
     }
     </style>
-    """).strip()
-    st.markdown(custom_css, unsafe_allow_html=True)
+    """
+    render_html_block(custom_css)
 
 
 def render_tailwind_header(title: str, subtitle: str, badge_text: str = "Active Production", badge_color: str = "bg-emerald-100 text-emerald-800"):
@@ -229,34 +244,11 @@ def render_tailwind_header(title: str, subtitle: str, badge_text: str = "Active 
     # 1. Apply global custom CSS automatically
     apply_custom_css()
 
-    # 2. Render modern responsive header container with zero-indent dedent
-    header_html = textwrap.dedent(f"""
-    <div style="
-        background: linear-gradient(135deg, #09122C 0%, #171E36 45%, #0F172A 100%);
-        border-radius: 18px;
-        padding: 24px 28px;
-        color: #FFFFFF;
-        box-shadow: 0 12px 30px -8px rgba(9, 18, 44, 0.35), 0 4px 12px -2px rgba(0, 0, 0, 0.2);
-        border: 1px solid rgba(255, 255, 255, 0.1);
-        margin-bottom: 20px;
-        position: relative;
-        overflow: hidden;
-    ">
-        <!-- Background Ambient Glow -->
-        <div style="
-            position: absolute;
-            top: -60px;
-            right: -60px;
-            width: 200px;
-            height: 200px;
-            background: radial-gradient(circle, rgba(37, 99, 235, 0.25) 0%, rgba(37, 99, 235, 0) 70%);
-            border-radius: 50%;
-            pointer-events: none;
-        "></div>
-
+    # 2. Render modern responsive header container
+    header_html = f"""
+    <div style="background: linear-gradient(135deg, #09122C 0%, #171E36 45%, #0F172A 100%); border-radius: 18px; padding: 24px 28px; color: #FFFFFF; box-shadow: 0 12px 30px -8px rgba(9, 18, 44, 0.35), 0 4px 12px -2px rgba(0, 0, 0, 0.2); border: 1px solid rgba(255, 255, 255, 0.1); margin-bottom: 20px; position: relative; overflow: hidden;">
         <div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 16px; position: relative; z-index: 2;">
             <div>
-                <!-- Institutional Breadcrumbs -->
                 <div style="display: flex; align-items: center; gap: 8px; margin-bottom: 8px;">
                     <span style="font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; color: #60A5FA;">
                         MetroCare Health Systems
@@ -270,60 +262,23 @@ def render_tailwind_header(title: str, subtitle: str, badge_text: str = "Active 
                         ABES MCA Capstone 2026
                     </span>
                 </div>
-
-                <!-- Title & Badge -->
                 <div style="display: flex; align-items: center; gap: 14px; flex-wrap: wrap;">
-                    <div style="
-                        width: 42px;
-                        height: 42px;
-                        border-radius: 12px;
-                        background: linear-gradient(135deg, #1E40AF, #3B82F6);
-                        display: flex;
-                        align-items: center;
-                        justify-content: center;
-                        box-shadow: 0 4px 12px rgba(37, 99, 235, 0.4);
-                        font-size: 20px;
-                    ">
+                    <div style="width: 42px; height: 42px; border-radius: 12px; background: linear-gradient(135deg, #1E40AF, #3B82F6); display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 12px rgba(37, 99, 235, 0.4); font-size: 20px;">
                         🏥
                     </div>
                     <h1 style="margin: 0; font-size: 26px; font-weight: 800; letter-spacing: -0.02em; color: #FFFFFF; font-family: 'Plus Jakarta Sans', sans-serif;">
                         {title}
                     </h1>
-                    <span style="
-                        font-size: 11px;
-                        font-weight: 700;
-                        padding: 4px 12px;
-                        border-radius: 20px;
-                        background: rgba(16, 185, 129, 0.18);
-                        color: #34D399;
-                        border: 1px solid rgba(52, 211, 153, 0.3);
-                        display: inline-flex;
-                        align-items: center;
-                        gap: 6px;
-                    ">
+                    <span style="font-size: 11px; font-weight: 700; padding: 4px 12px; border-radius: 20px; background: rgba(16, 185, 129, 0.18); color: #34D399; border: 1px solid rgba(52, 211, 153, 0.3); display: inline-flex; align-items: center; gap: 6px;">
                         <span class="pulse-dot"></span>
                         {badge_text}
                     </span>
                 </div>
-
-                <!-- Subtitle -->
                 <p style="margin: 8px 0 0 0; color: #CBD5E1; font-size: 13.5px; font-weight: 400; max-width: 820px; line-height: 1.5;">
                     {subtitle}
                 </p>
             </div>
-
-            <!-- Header System Metadata Ticker -->
-            <div style="
-                display: flex;
-                flex-direction: column;
-                gap: 6px;
-                background: rgba(15, 23, 42, 0.6);
-                border: 1px solid rgba(255, 255, 255, 0.12);
-                border-radius: 12px;
-                padding: 10px 14px;
-                font-size: 11.5px;
-                min-width: 200px;
-            ">
+            <div style="display: flex; flex-direction: column; gap: 6px; background: rgba(15, 23, 42, 0.6); border: 1px solid rgba(255, 255, 255, 0.12); border-radius: 12px; padding: 10px 14px; font-size: 11.5px; min-width: 200px;">
                 <div style="display: flex; justify-content: space-between; align-items: center; color: #94A3B8;">
                     <span>Analytics Engine:</span>
                     <strong style="color: #60A5FA;">SQLite3 ACID</strong>
@@ -339,15 +294,14 @@ def render_tailwind_header(title: str, subtitle: str, badge_text: str = "Active 
             </div>
         </div>
     </div>
-    """).strip()
-    st.markdown(header_html, unsafe_allow_html=True)
+    """
+    render_html_block(header_html)
 
 
 def render_kpi_card(title: str, value: str, subtext: str, badge_text: str = "+0.0%", badge_color: str = "bg-slate-100 text-slate-700"):
     """
     Renders a single responsive modern executive metric card with top accent styling.
     """
-    # Pick accent color based on badge text or title
     accent_class = "accent-blue"
     if "breach" in title.lower() or "breach" in badge_text.lower() or "risk" in badge_text.lower() or "danger" in badge_color.lower() or "red" in badge_color.lower():
         accent_class = "accent-rose"
@@ -358,22 +312,14 @@ def render_kpi_card(title: str, value: str, subtext: str, badge_text: str = "+0.
     elif "revenue" in title.lower() or "csat" in title.lower() or "purple" in badge_color.lower():
         accent_class = "accent-purple"
 
-    card_html = textwrap.dedent(f"""
+    card_html = f"""
     <div class="metro-kpi-card">
         <div class="metro-kpi-accent {accent_class}"></div>
         <div style="display: flex; justify-content: space-between; align-items: flex-start; gap: 8px;">
             <span style="font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; color: #64748B;">
                 {title}
             </span>
-            <span style="
-                font-size: 10.5px;
-                font-weight: 700;
-                padding: 2px 8px;
-                border-radius: 12px;
-                background: #F1F5F9;
-                color: #334155;
-                white-space: nowrap;
-            ">
+            <span style="font-size: 10.5px; font-weight: 700; padding: 2px 8px; border-radius: 12px; background: #F1F5F9; color: #334155; white-space: nowrap;">
                 {badge_text}
             </span>
         </div>
@@ -384,26 +330,23 @@ def render_kpi_card(title: str, value: str, subtext: str, badge_text: str = "+0.
             {subtext}
         </div>
     </div>
-    """).strip()
-    st.markdown(card_html, unsafe_allow_html=True)
+    """
+    render_html_block(card_html)
 
 
 def render_kpi_grid(kpis: list):
     """
-    Renders 4 KPI cards in a unified responsive grid using Streamlit native columns
-    and custom styled HTML cards for zero layout jitter.
+    Renders 4 KPI cards in a unified responsive grid using Streamlit native columns.
     kpis: list of dicts with keys: ['title', 'value', 'subtext', 'badge_text', 'badge_color']
     """
     cols = st.columns(len(kpis))
     for idx, (col, k) in enumerate(zip(cols, kpis)):
         with col:
-            # Determine color theme
             b_text = k.get("badge_text", "")
             title = k.get("title", "")
             val = k.get("value", "")
             sub = k.get("subtext", "")
 
-            # Choose accent strip
             if idx == 0:
                 accent = "accent-blue"
                 pill_bg = "#EFF6FF"
@@ -441,7 +384,7 @@ def render_kpi_grid(kpis: list):
                 pill_border = "#DDD6FE"
                 icon = "⭐"
 
-            card_html = textwrap.dedent(f"""
+            card_html = f"""
             <div class="metro-kpi-card" style="margin-bottom: 16px;">
                 <div class="metro-kpi-accent {accent}"></div>
                 <div style="display: flex; justify-content: space-between; align-items: center; gap: 8px;">
@@ -451,16 +394,7 @@ def render_kpi_grid(kpis: list):
                             {title}
                         </span>
                     </div>
-                    <span style="
-                        font-size: 10px;
-                        font-weight: 700;
-                        padding: 3px 8px;
-                        border-radius: 12px;
-                        background: {pill_bg};
-                        color: {pill_fg};
-                        border: 1px solid {pill_border};
-                        white-space: nowrap;
-                    ">
+                    <span style="font-size: 10px; font-weight: 700; padding: 3px 8px; border-radius: 12px; background: {pill_bg}; color: {pill_fg}; border: 1px solid {pill_border}; white-space: nowrap;">
                         {b_text}
                     </span>
                 </div>
@@ -471,8 +405,8 @@ def render_kpi_grid(kpis: list):
                     {sub}
                 </div>
             </div>
-            """).strip()
-            st.markdown(card_html, unsafe_allow_html=True)
+            """
+            render_html_block(card_html)
 
 
 def render_insight_box(title: str, text: str, category: str = "Info"):
@@ -516,16 +450,8 @@ def render_insight_box(title: str, text: str, category: str = "Info"):
     }
     cfg = styles.get(category, styles["Info"])
 
-    html_code = textwrap.dedent(f"""
-    <div style="
-        background-color: {cfg['bg']};
-        border: 1px solid {cfg['border']}40;
-        border-left: 5px solid {cfg['border']};
-        border-radius: 12px;
-        padding: 14px 18px;
-        margin: 12px 0 18px 0;
-        box-shadow: 0 2px 4px rgba(0,0,0,0.03);
-    ">
+    html_code = f"""
+    <div style="background-color: {cfg['bg']}; border: 1px solid {cfg['border']}40; border-left: 5px solid {cfg['border']}; border-radius: 12px; padding: 14px 18px; margin: 12px 0 18px 0; box-shadow: 0 2px 4px rgba(0,0,0,0.03);">
         <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 8px;">
             <div style="display: flex; align-items: center; gap: 8px;">
                 <span style="font-size: 16px;">{cfg['icon']}</span>
@@ -533,16 +459,7 @@ def render_insight_box(title: str, text: str, category: str = "Info"):
                     {title}
                 </span>
             </div>
-            <span style="
-                font-size: 10px;
-                font-weight: 700;
-                padding: 2px 8px;
-                border-radius: 6px;
-                background-color: {cfg['tag_bg']};
-                color: {cfg['tag_color']};
-                text-transform: uppercase;
-                letter-spacing: 0.05em;
-            ">
+            <span style="font-size: 10px; font-weight: 700; padding: 2px 8px; border-radius: 6px; background-color: {cfg['tag_bg']}; color: {cfg['tag_color']}; text-transform: uppercase; letter-spacing: 0.05em;">
                 ANALYTICAL INSIGHT • {category}
             </span>
         </div>
@@ -550,8 +467,8 @@ def render_insight_box(title: str, text: str, category: str = "Info"):
             {text}
         </div>
     </div>
-    """).strip()
-    st.markdown(html_code, unsafe_allow_html=True)
+    """
+    render_html_block(html_code)
 
 
 def apply_plotly_theme(fig, title: str = None, height: int = 380):

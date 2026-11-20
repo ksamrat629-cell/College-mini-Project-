@@ -5,7 +5,6 @@ MCA Capstone Project 2026 | US Samrat (Roll: 2500320140158) | Mentor: Prof. Anja
 """
 
 import os
-import textwrap
 import streamlit as st
 import pandas as pd
 import numpy as np
@@ -25,7 +24,8 @@ from src.ui import (
     render_kpi_grid,
     render_insight_box,
     apply_plotly_theme,
-    apply_custom_css
+    apply_custom_css,
+    render_html_block
 )
 
 # 1. Configure Streamlit Page
@@ -54,20 +54,17 @@ except Exception as e:
     st.stop()
 
 # 4. Initialize Global Sidebar Filters (st.session_state)
-st.sidebar.markdown(
-    textwrap.dedent("""
-    <div style="display: flex; align-items: center; gap: 8px; margin-bottom: 4px;">
-        <span style="font-size: 20px;">🏥</span>
-        <span style="font-size: 16px; font-weight: 800; color: #FFFFFF; letter-spacing: -0.02em;">
-            METROCARE OPS
-        </span>
-    </div>
-    <div style="font-size: 11px; color: #94A3B8; margin-bottom: 16px; font-weight: 500;">
-        Operational Intelligence Command Center
-    </div>
-    """).strip(),
-    unsafe_allow_html=True
-)
+render_html_block("""
+<div style="display: flex; align-items: center; gap: 8px; margin-bottom: 4px;">
+    <span style="font-size: 20px;">🏥</span>
+    <span style="font-size: 16px; font-weight: 800; color: #FFFFFF; letter-spacing: -0.02em;">
+        METROCARE OPS
+    </span>
+</div>
+<div style="font-size: 11px; color: #94A3B8; margin-bottom: 16px; font-weight: 500;">
+    Operational Intelligence Command Center
+</div>
+""", sidebar=True)
 
 st.sidebar.markdown("### 🎛️ Operational Filters")
 st.sidebar.caption("Global filter criteria shared across all 8 modules")
@@ -78,14 +75,12 @@ if "selected_departments" not in st.session_state:
     st.session_state["selected_departments"] = all_depts
 
 # Quick Filter Preset Buttons in Sidebar
-st.sidebar.markdown(
-    textwrap.dedent("""
-    <div style='font-size: 11px; font-weight: 700; color: #94A3B8; text-transform: uppercase; margin-bottom: 6px;'>
-        Quick Department Presets
-    </div>
-    """).strip(),
-    unsafe_allow_html=True
-)
+render_html_block("""
+<div style='font-size: 11px; font-weight: 700; color: #94A3B8; text-transform: uppercase; margin-bottom: 6px;'>
+    Quick Department Presets
+</div>
+""", sidebar=True)
+
 p_col1, p_col2 = st.sidebar.columns(2)
 with p_col1:
     if st.button("All Clinics", use_container_width=True):
@@ -130,32 +125,21 @@ st.sidebar.markdown("---")
 
 # Database Diagnostics Box
 quality_audit = audit_data_quality(clean_df)
-st.sidebar.markdown(
-    textwrap.dedent(f"""
-    <div style="
-        background: rgba(15, 23, 42, 0.7);
-        border: 1px solid rgba(255, 255, 255, 0.12);
-        border-radius: 12px;
-        padding: 12px;
-        font-size: 11.5px;
-        color: #CBD5E1;
-        line-height: 1.6;
-    ">
-        <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 6px;">
-            <span style="font-weight: 700; color: #FFFFFF; font-size: 12px;">📊 Diagnostics</span>
-            <span style="display: flex; align-items: center; gap: 4px; color: #34D399; font-weight: 700;">
-                <span class="pulse-dot"></span> Online
-            </span>
-        </div>
-        <div>Active Records: <strong style="color: #60A5FA;">{len(clean_df):,} encounters</strong></div>
-        <div>Quarantined: <strong style="color: #F87171;">{len(anomaly_df)} (RULE-01)</strong></div>
-        <div>Clinics Monitored: <strong style="color: #FBBF24;">{len(all_depts)} departments</strong></div>
-        <div>Integrity Score: <strong style="color: #34D399;">{quality_audit['completeness_score']:.1f}%</strong></div>
-        <div style="margin-top: 4px; font-size: 10px; color: #94A3B8;">Engine: SQLite3 ACID In-Memory</div>
+render_html_block(f"""
+<div style="background: rgba(15, 23, 42, 0.7); border: 1px solid rgba(255, 255, 255, 0.12); border-radius: 12px; padding: 12px; font-size: 11.5px; color: #CBD5E1; line-height: 1.6;">
+    <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 6px;">
+        <span style="font-weight: 700; color: #FFFFFF; font-size: 12px;">📊 Diagnostics</span>
+        <span style="display: flex; align-items: center; gap: 4px; color: #34D399; font-weight: 700;">
+            <span class="pulse-dot"></span> Online
+        </span>
     </div>
-    """).strip(),
-    unsafe_allow_html=True
-)
+    <div>Active Records: <strong style="color: #60A5FA;">{len(clean_df):,} encounters</strong></div>
+    <div>Quarantined: <strong style="color: #F87171;">{len(anomaly_df)} (RULE-01)</strong></div>
+    <div>Clinics Monitored: <strong style="color: #FBBF24;">{len(all_depts)} departments</strong></div>
+    <div>Integrity Score: <strong style="color: #34D399;">{quality_audit['completeness_score']:.1f}%</strong></div>
+    <div style="margin-top: 4px; font-size: 10px; color: #94A3B8;">Engine: SQLite3 ACID In-Memory</div>
+</div>
+""", sidebar=True)
 
 st.sidebar.markdown("---")
 st.sidebar.caption("ABES Engineering College • MCA Capstone 2026\n\nLearner: US Samrat | Mentor: Prof. Anjali Pandey")
@@ -309,7 +293,6 @@ with tab_matrix:
     dept_matrix["Readmit_Rate_Pct"] = ((dept_matrix["Readmit_Count"] / dept_matrix["Total_Encounters"]) * 100.0).round(1)
     dept_matrix["Status"] = np.where(dept_matrix["Avg_Wait_Mins"] > 30.0, "⚠️ Action Needed", "✅ SLA Met")
     
-    # Render interactive styled dataframe
     st.dataframe(
         dept_matrix.sort_values("Total_Encounters", ascending=False),
         use_container_width=True,
@@ -374,57 +357,45 @@ with tab_directory:
     cols_list = [col1, col2, col3, col4, col1, col2, col3, col4]
     for idx, (m_title, m_desc, m_path, m_badge) in enumerate(modules):
         with cols_list[idx]:
-            st.markdown(
-                textwrap.dedent(f"""
-                <div class="nav-module-card" style="margin-bottom: 14px;">
-                    <div>
-                        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 6px;">
-                            <span style="font-size: 13.5px; font-weight: 700; color: #1E3A8A;">{m_title}</span>
-                            <span style="font-size: 10px; font-weight: 700; background: #EFF6FF; color: #2563EB; padding: 2px 6px; border-radius: 4px;">{m_badge}</span>
-                        </div>
-                        <p style="font-size: 11.5px; color: #64748B; line-height: 1.4; margin: 0 0 10px 0;">{m_desc}</p>
+            render_html_block(f"""
+            <div class="nav-module-card" style="margin-bottom: 14px;">
+                <div>
+                    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 6px;">
+                        <span style="font-size: 13.5px; font-weight: 700; color: #1E3A8A;">{m_title}</span>
+                        <span style="font-size: 10px; font-weight: 700; background: #EFF6FF; color: #2563EB; padding: 2px 6px; border-radius: 4px;">{m_badge}</span>
                     </div>
-                    <div style="font-size: 11px; font-weight: 700; color: #2563EB; display: flex; align-items: center; gap: 4px;">
-                        Navigate in Sidebar &rarr;
-                    </div>
+                    <p style="font-size: 11.5px; color: #64748B; line-height: 1.4; margin: 0 0 10px 0;">{m_desc}</p>
                 </div>
-                """).strip(),
-                unsafe_allow_html=True
-            )
+                <div style="font-size: 11px; font-weight: 700; color: #2563EB; display: flex; align-items: center; gap: 4px;">
+                    Navigate in Sidebar &rarr;
+                </div>
+            </div>
+            """)
 
 # 10. Institutional Governance Footer
 st.markdown("---")
 fcol1, fcol2, fcol3 = st.columns([2, 1, 1])
 with fcol1:
-    st.markdown(
-        textwrap.dedent("""
-        <div style="font-size: 12px; color: #64748B;">
-            <strong>MetroCare Health Systems Operational Intelligence Platform</strong><br/>
-            HCLTech Career Shaper Programme • ABES Engineering College, Ghaziabad (MCA 2026)<br/>
-            Learner: <strong>US Samrat</strong> (Roll No: <code>2500320140158</code>) | Mentor: <strong>Prof. Anjali Pandey</strong>
-        </div>
-        """).strip(),
-        unsafe_allow_html=True
-    )
+    render_html_block("""
+    <div style="font-size: 12px; color: #64748B;">
+        <strong>MetroCare Health Systems Operational Intelligence Platform</strong><br/>
+        HCLTech Career Shaper Programme • ABES Engineering College, Ghaziabad (MCA 2026)<br/>
+        Learner: <strong>US Samrat</strong> (Roll No: <code>2500320140158</code>) | Mentor: <strong>Prof. Anjali Pandey</strong>
+    </div>
+    """)
 with fcol2:
-    st.markdown(
-        textwrap.dedent(f"""
-        <div style="font-size: 11.5px; color: #64748B;">
-            <strong>Data Integrity Score:</strong> {quality_audit['completeness_score']}%<br/>
-            <strong>Quarantined Records:</strong> {len(anomaly_df)} (RULE-01)<br/>
-            <strong>Duplicate Keys:</strong> {quality_audit['duplicate_count']}
-        </div>
-        """).strip(),
-        unsafe_allow_html=True
-    )
+    render_html_block(f"""
+    <div style="font-size: 11.5px; color: #64748B;">
+        <strong>Data Integrity Score:</strong> {quality_audit['completeness_score']}%<br/>
+        <strong>Quarantined Records:</strong> {len(anomaly_df)} (RULE-01)<br/>
+        <strong>Duplicate Keys:</strong> {quality_audit['duplicate_count']}
+    </div>
+    """)
 with fcol3:
-    st.markdown(
-        textwrap.dedent("""
-        <div style="font-size: 11.5px; color: #64748B; text-align: right;">
-            <span class="pulse-dot"></span> <strong>Live Production</strong><br/>
-            Repository: <code>College-mini-Project-</code><br/>
-            Version: <code>v1.0.4 - Release</code>
-        </div>
-        """).strip(),
-        unsafe_allow_html=True
-    )
+    render_html_block("""
+    <div style="font-size: 11.5px; color: #64748B; text-align: right;">
+        <span class="pulse-dot"></span> <strong>Live Production</strong><br/>
+        Repository: <code>College-mini-Project-</code><br/>
+        Version: <code>v1.0.4 - Release</code>
+    </div>
+    """)

@@ -14,7 +14,7 @@ import plotly.graph_objects as go
 from src.data_loader import load_analytics_view, load_all_tables
 from src.data_cleaner import clean_analytics_data
 from src.analytics import compute_revenue_payer_mix, compute_no_show_matrix, simulate_no_show_recovery
-from src.ui import render_tailwind_header, render_kpi_grid, render_insight_box, apply_plotly_theme
+from src.ui import render_tailwind_header, render_kpi_grid, render_insight_box, apply_plotly_theme, render_html_block
 
 st.set_page_config(page_title="Revenue & Payer Mix | MetroCare", page_icon="💰", layout="wide")
 
@@ -156,21 +156,18 @@ with sim_col1:
     )
 
 with sim_col2:
-    st.markdown(
-        textwrap.dedent(f"""
-        <div style="background-color: #F8FAFC; border: 1px solid #CBD5E1; border-radius: 12px; padding: 18px;">
-            <div style="font-weight: 700; color: #1E293B; font-size: 15px;">💡 Simulator Dynamics & ROI Analysis</div>
-            <div style="font-size: 13px; color: #475569; margin-top: 8px; line-height: 1.6;">
-                • <b>Baseline Unfulfilled Appointments:</b> {unfulfilled_slots} slots ({ns_overall['no_show_rate']:.1f}% no-show rate)<br>
-                • <b>Target Mitigation:</b> {recovery_slider}% reduction target<br>
-                • <b>Recovered Capacity:</b> <b>{sim_result['recovered_slots']} patient consultations</b> restored to OPD clinics<br>
-                • <b>Recovered Net Revenue:</b> <span style="color: #0D9488; font-weight: bold; font-size: 16px;">₹{sim_result['recovered_revenue']:,.2f}</span> (calculated at ₹{avg_rev:,.2f} avg yield/visit)<br>
-                • <b>Implementation Strategy:</b> 2-way WhatsApp appointment confirmations 48h prior + dynamic overbooking during peak morning hours.
-            </div>
+    render_html_block(f"""
+    <div style="background-color: #F8FAFC; border: 1px solid #CBD5E1; border-radius: 12px; padding: 18px;">
+        <div style="font-weight: 700; color: #1E293B; font-size: 15px;">💡 Simulator Dynamics & ROI Analysis</div>
+        <div style="font-size: 13px; color: #475569; margin-top: 8px; line-height: 1.6;">
+            • <b>Baseline Unfulfilled Appointments:</b> {unfulfilled_slots} slots ({ns_overall['no_show_rate']:.1f}% no-show rate)<br>
+            • <b>Target Mitigation:</b> {recovery_slider}% reduction target<br>
+            • <b>Recovered Capacity:</b> <b>{sim_result['recovered_slots']} patient consultations</b> restored to OPD clinics<br>
+            • <b>Recovered Net Revenue:</b> <span style="color: #0D9488; font-weight: bold; font-size: 16px;">₹{sim_result['recovered_revenue']:,.2f}</span> (calculated at ₹{avg_rev:,.2f} avg yield/visit)<br>
+            • <b>Implementation Strategy:</b> 2-way WhatsApp appointment confirmations 48h prior + dynamic overbooking during peak morning hours.
         </div>
-        """).strip(),
-        unsafe_allow_html=True
-    )
+    </div>
+    """)
 
 # Detailed Payer Settlement Audit Table
 st.markdown("#### 📋 Payer Category Settlement Summary")

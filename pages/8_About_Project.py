@@ -7,7 +7,7 @@ MCA Capstone Project 2026 | ABES Engineering College
 import textwrap
 import streamlit as st
 import pandas as pd
-from src.ui import render_tailwind_header, render_kpi_grid, render_insight_box
+from src.ui import render_tailwind_header, render_kpi_grid, render_insight_box, render_html_block
 
 st.set_page_config(page_title="About & Governance | MetroCare", page_icon="ℹ️", layout="wide")
 
@@ -87,41 +87,42 @@ with col1:
 
 with col2:
     st.markdown("### 📐 System Architectural Pipeline")
-    st.markdown(
-        textwrap.dedent("""
-        ```mermaid
-        flowchart TD
-            subgraph L1["Layer 1: Relational Data Mart"]
-                DB[("data/app.db<br/>(SQLite 3NF Schema)")]
-                CSV["data/*.csv &<br/>healthcare_patient_visit_data.xlsx"]
-            end
-
-            subgraph L2["Layer 2: Ingestion & Cache Engine"]
-                DL["src/data_loader.py<br/>(@st.cache_data ttl=3600)"]
-                DC["src/data_cleaner.py<br/>(RULE-01 Anomaly Quarantine)"]
-            end
-
-            subgraph L3["Layer 3: Analytical & Statistical Engine"]
-                AN["src/analytics.py<br/>(Wait SLA, No-Show, Recovery)"]
-                ST["src/stats.py<br/>(ANOVA, Chi2, Pearson r)"]
-            end
-
-            subgraph L4["Layer 4: Presentation & UI Layer"]
-                UI["src/ui.py<br/>(Tailwind CDN in st.iframe)"]
-                APP["app.py & pages/1..8<br/>(Interactive Multipage App)"]
-            end
-
-            DB --> DL
-            CSV -.-> DB
-            DL --> DC
-            DC --> AN
-            DC --> ST
-            AN --> APP
-            ST --> APP
-            UI --> APP
-        ```
-        """).strip()
-    )
+    render_html_block("""
+    <div style="background: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 14px; padding: 18px; box-shadow: 0 2px 6px rgba(0,0,0,0.04);">
+        <div style="margin-bottom: 14px; padding-bottom: 10px; border-bottom: 1px solid #F1F5F9;">
+            <div style="font-weight: 700; color: #1E3A8A; font-size: 13.5px; display: flex; align-items: center; gap: 6px;">
+                <span>🗄️</span> <span>Layer 1: Relational Data Mart</span>
+            </div>
+            <div style="font-size: 12px; color: #64748B; margin-top: 4px;">
+                SQLite3 3NF ACID data mart (<code>data/app.db</code>) with view <code>v_patient_visit_analytics</code> and master Excel workbook.
+            </div>
+        </div>
+        <div style="margin-bottom: 14px; padding-bottom: 10px; border-bottom: 1px solid #F1F5F9;">
+            <div style="font-weight: 700; color: #1E3A8A; font-size: 13.5px; display: flex; align-items: center; gap: 6px;">
+                <span>⚡</span> <span>Layer 2: Ingestion & Cache Engine</span>
+            </div>
+            <div style="font-size: 12px; color: #64748B; margin-top: 4px;">
+                <code>src/data_loader.py</code> with <code>@st.cache_data</code> and <code>src/data_cleaner.py</code> with RULE-01 anomaly quarantine.
+            </div>
+        </div>
+        <div style="margin-bottom: 14px; padding-bottom: 10px; border-bottom: 1px solid #F1F5F9;">
+            <div style="font-weight: 700; color: #1E3A8A; font-size: 13.5px; display: flex; align-items: center; gap: 6px;">
+                <span>📊</span> <span>Layer 3: Analytical & Statistical Engine</span>
+            </div>
+            <div style="font-size: 12px; color: #64748B; margin-top: 4px;">
+                <code>src/analytics.py</code> (Wait SLA, No-Show, Recovery) and <code>src/stats.py</code> (ANOVA, Kruskal, Chi2, Pearson r).
+            </div>
+        </div>
+        <div>
+            <div style="font-weight: 700; color: #1E3A8A; font-size: 13.5px; display: flex; align-items: center; gap: 6px;">
+                <span>🖥️</span> <span>Layer 4: Presentation & UI Layer</span>
+            </div>
+            <div style="font-size: 12px; color: #64748B; margin-top: 4px;">
+                Interactive Command Center (<code>app.py</code>) and 8 specialized multi-page operational intelligence modules.
+            </div>
+        </div>
+    </div>
+    """)
 
 st.markdown("---")
 st.markdown("### 📋 18-Step SDLC Project Deliverables Matrix")
