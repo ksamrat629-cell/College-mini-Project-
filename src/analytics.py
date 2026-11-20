@@ -70,13 +70,17 @@ def compute_no_show_matrix(appts_df: pd.DataFrame) -> dict:
     """
     Computes appointment fulfillment, no-show rate, and channel patterns.
     """
-    if appts_df.empty or "status" not in appts_df.columns:
-        return {"total_appointments": 0, "completed": 0, "no_shows": 0, "cancelled": 0, "no_show_rate": 0.0}
+    status_col = "appointment_status" if "appointment_status" in appts_df.columns else ("status" if "status" in appts_df.columns else None)
+    if appts_df.empty or status_col is None:
+        return {
+            "total_appointments": 0, "completed": 0, "no_shows": 0,
+            "cancelled": 0, "unfulfilled": 0, "no_show_rate": 0.0, "pure_no_show_rate": 0.0
+        }
 
     total = len(appts_df)
-    completed = int((appts_df["status"] == "Completed").sum())
-    no_shows = int((appts_df["status"] == "No-Show").sum())
-    cancelled = int((appts_df["status"] == "Cancelled").sum())
+    completed = int((appts_df[status_col] == "Completed").sum())
+    no_shows = int((appts_df[status_col] == "No-Show").sum())
+    cancelled = int((appts_df[status_col] == "Cancelled").sum())
     unfulfilled = no_shows + cancelled
     no_show_rate = round(float(unfulfilled / total * 100.0), 1) if total > 0 else 0.0
 
