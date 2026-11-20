@@ -4,6 +4,7 @@ MetroCare Health Systems | Operational Intelligence Platform
 MCA Capstone Project 2026 | ABES Engineering College
 """
 
+import textwrap
 import streamlit as st
 import pandas as pd
 from src.ui import render_tailwind_header, render_kpi_grid, render_insight_box
@@ -58,7 +59,7 @@ col1, col2 = st.columns([1, 1])
 with col1:
     st.markdown("### 🏛️ Academic Institutional Details")
     st.markdown(
-        """
+        textwrap.dedent("""
         - **Institution:** ABES Engineering College, Ghaziabad, Uttar Pradesh (College Code: 032)
         - **Affiliating University:** Dr. A.P.J. Abdul Kalam Technical University (AKTU), Lucknow
         - **Program:** Master of Computer Applications (MCA) — 2 Year Full-Time Degree
@@ -66,12 +67,12 @@ with col1:
         - **Academic Session:** 2024–2026
         - **Project Title:** *Healthcare Patient Visit Analysis & Operational Intelligence Platform*
         - **Supervisory Faculty:** Prof. Anjali Pandey, Assistant Professor, Department of Computer Applications
-        """
+        """).strip()
     )
     
     st.markdown("### 🛠️ Approved Technology Stack")
     st.markdown(
-        """
+        textwrap.dedent("""
         - **Core Language:** Python 3.12 / 3.11
         - **Data Processing & Manipulation:** pandas `2.2.3`, NumPy `1.26.4`
         - **Inferential Statistical Engine:** SciPy `1.14.1` (One-Way ANOVA, Kruskal-Wallis, Chi-Square), statsmodels `0.14.4` (OLS)
@@ -81,13 +82,13 @@ with col1:
         - **Relational Data Layer:** SQLite3 ACID-compliant embedded database (`data/app.db`)
         - **Testing & Quality Assurance:** pytest `8.3.3`, Streamlit AppTest framework
         - **Version Control & Hosting:** Git, GitHub, Streamlit Community Cloud
-        """
+        """).strip()
     )
 
 with col2:
     st.markdown("### 📐 System Architectural Pipeline")
     st.markdown(
-        """
+        textwrap.dedent("""
         ```mermaid
         flowchart TD
             subgraph L1["Layer 1: Relational Data Mart"]
@@ -119,7 +120,7 @@ with col2:
             ST --> APP
             UI --> APP
         ```
-        """
+        """).strip()
     )
 
 st.markdown("---")

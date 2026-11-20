@@ -5,6 +5,7 @@ MCA Capstone Project 2026 | US Samrat (Roll: 2500320140158) | Mentor: Prof. Anja
 """
 
 import os
+import textwrap
 import streamlit as st
 import pandas as pd
 import numpy as np
@@ -54,7 +55,7 @@ except Exception as e:
 
 # 4. Initialize Global Sidebar Filters (st.session_state)
 st.sidebar.markdown(
-    """
+    textwrap.dedent("""
     <div style="display: flex; align-items: center; gap: 8px; margin-bottom: 4px;">
         <span style="font-size: 20px;">🏥</span>
         <span style="font-size: 16px; font-weight: 800; color: #FFFFFF; letter-spacing: -0.02em;">
@@ -64,7 +65,7 @@ st.sidebar.markdown(
     <div style="font-size: 11px; color: #94A3B8; margin-bottom: 16px; font-weight: 500;">
         Operational Intelligence Command Center
     </div>
-    """,
+    """).strip(),
     unsafe_allow_html=True
 )
 
@@ -77,7 +78,14 @@ if "selected_departments" not in st.session_state:
     st.session_state["selected_departments"] = all_depts
 
 # Quick Filter Preset Buttons in Sidebar
-st.sidebar.markdown("<div style='font-size: 11px; font-weight: 700; color: #94A3B8; text-transform: uppercase; margin-bottom: 6px;'>Quick Department Presets</div>", unsafe_allow_html=True)
+st.sidebar.markdown(
+    textwrap.dedent("""
+    <div style='font-size: 11px; font-weight: 700; color: #94A3B8; text-transform: uppercase; margin-bottom: 6px;'>
+        Quick Department Presets
+    </div>
+    """).strip(),
+    unsafe_allow_html=True
+)
 p_col1, p_col2 = st.sidebar.columns(2)
 with p_col1:
     if st.button("All Clinics", use_container_width=True):
@@ -123,7 +131,7 @@ st.sidebar.markdown("---")
 # Database Diagnostics Box
 quality_audit = audit_data_quality(clean_df)
 st.sidebar.markdown(
-    f"""
+    textwrap.dedent(f"""
     <div style="
         background: rgba(15, 23, 42, 0.7);
         border: 1px solid rgba(255, 255, 255, 0.12);
@@ -145,7 +153,7 @@ st.sidebar.markdown(
         <div>Integrity Score: <strong style="color: #34D399;">{quality_audit['completeness_score']:.1f}%</strong></div>
         <div style="margin-top: 4px; font-size: 10px; color: #94A3B8;">Engine: SQLite3 ACID In-Memory</div>
     </div>
-    """,
+    """).strip(),
     unsafe_allow_html=True
 )
 
@@ -367,7 +375,7 @@ with tab_directory:
     for idx, (m_title, m_desc, m_path, m_badge) in enumerate(modules):
         with cols_list[idx]:
             st.markdown(
-                f"""
+                textwrap.dedent(f"""
                 <div class="nav-module-card" style="margin-bottom: 14px;">
                     <div>
                         <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 6px;">
@@ -380,7 +388,7 @@ with tab_directory:
                         Navigate in Sidebar &rarr;
                     </div>
                 </div>
-                """,
+                """).strip(),
                 unsafe_allow_html=True
             )
 
@@ -389,34 +397,34 @@ st.markdown("---")
 fcol1, fcol2, fcol3 = st.columns([2, 1, 1])
 with fcol1:
     st.markdown(
-        """
+        textwrap.dedent("""
         <div style="font-size: 12px; color: #64748B;">
             <strong>MetroCare Health Systems Operational Intelligence Platform</strong><br/>
             HCLTech Career Shaper Programme • ABES Engineering College, Ghaziabad (MCA 2026)<br/>
             Learner: <strong>US Samrat</strong> (Roll No: <code>2500320140158</code>) | Mentor: <strong>Prof. Anjali Pandey</strong>
         </div>
-        """,
+        """).strip(),
         unsafe_allow_html=True
     )
 with fcol2:
     st.markdown(
-        f"""
+        textwrap.dedent(f"""
         <div style="font-size: 11.5px; color: #64748B;">
             <strong>Data Integrity Score:</strong> {quality_audit['completeness_score']}%<br/>
             <strong>Quarantined Records:</strong> {len(anomaly_df)} (RULE-01)<br/>
             <strong>Duplicate Keys:</strong> {quality_audit['duplicate_count']}
         </div>
-        """,
+        """).strip(),
         unsafe_allow_html=True
     )
 with fcol3:
     st.markdown(
-        """
+        textwrap.dedent("""
         <div style="font-size: 11.5px; color: #64748B; text-align: right;">
             <span class="pulse-dot"></span> <strong>Live Production</strong><br/>
             Repository: <code>College-mini-Project-</code><br/>
             Version: <code>v1.0.4 - Release</code>
         </div>
-        """,
+        """).strip(),
         unsafe_allow_html=True
     )

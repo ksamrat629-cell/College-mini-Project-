@@ -1,3 +1,4 @@
+import textwrap
 import streamlit as st
 import streamlit.components.v1 as components
 
@@ -10,7 +11,7 @@ def apply_custom_css():
     - Modern Glassmorphism Cards, Hover Transitions, and Micro-interactions
     - Polished Tab Navigation, Buttons, Metric Badges, and Alert Banners
     """
-    custom_css = """
+    custom_css = textwrap.dedent("""
     <style>
     /* 1. Global Typography & Canvas */
     @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap');
@@ -215,7 +216,7 @@ def apply_custom_css():
         overflow: hidden !important;
     }
     </style>
-    """
+    """).strip()
     st.markdown(custom_css, unsafe_allow_html=True)
 
 
@@ -228,8 +229,8 @@ def render_tailwind_header(title: str, subtitle: str, badge_text: str = "Active 
     # 1. Apply global custom CSS automatically
     apply_custom_css()
 
-    # 2. Render modern responsive header container
-    header_html = f"""
+    # 2. Render modern responsive header container with zero-indent dedent
+    header_html = textwrap.dedent(f"""
     <div style="
         background: linear-gradient(135deg, #09122C 0%, #171E36 45%, #0F172A 100%);
         border-radius: 18px;
@@ -338,7 +339,7 @@ def render_tailwind_header(title: str, subtitle: str, badge_text: str = "Active 
             </div>
         </div>
     </div>
-    """
+    """).strip()
     st.markdown(header_html, unsafe_allow_html=True)
 
 
@@ -357,7 +358,7 @@ def render_kpi_card(title: str, value: str, subtext: str, badge_text: str = "+0.
     elif "revenue" in title.lower() or "csat" in title.lower() or "purple" in badge_color.lower():
         accent_class = "accent-purple"
 
-    card_html = f"""
+    card_html = textwrap.dedent(f"""
     <div class="metro-kpi-card">
         <div class="metro-kpi-accent {accent_class}"></div>
         <div style="display: flex; justify-content: space-between; align-items: flex-start; gap: 8px;">
@@ -383,7 +384,7 @@ def render_kpi_card(title: str, value: str, subtext: str, badge_text: str = "+0.
             {subtext}
         </div>
     </div>
-    """
+    """).strip()
     st.markdown(card_html, unsafe_allow_html=True)
 
 
@@ -398,7 +399,6 @@ def render_kpi_grid(kpis: list):
         with col:
             # Determine color theme
             b_text = k.get("badge_text", "")
-            b_color = k.get("badge_color", "")
             title = k.get("title", "")
             val = k.get("value", "")
             sub = k.get("subtext", "")
@@ -441,7 +441,7 @@ def render_kpi_grid(kpis: list):
                 pill_border = "#DDD6FE"
                 icon = "⭐"
 
-            card_html = f"""
+            card_html = textwrap.dedent(f"""
             <div class="metro-kpi-card" style="margin-bottom: 16px;">
                 <div class="metro-kpi-accent {accent}"></div>
                 <div style="display: flex; justify-content: space-between; align-items: center; gap: 8px;">
@@ -471,7 +471,7 @@ def render_kpi_grid(kpis: list):
                     {sub}
                 </div>
             </div>
-            """
+            """).strip()
             st.markdown(card_html, unsafe_allow_html=True)
 
 
@@ -516,7 +516,7 @@ def render_insight_box(title: str, text: str, category: str = "Info"):
     }
     cfg = styles.get(category, styles["Info"])
 
-    html_code = f"""
+    html_code = textwrap.dedent(f"""
     <div style="
         background-color: {cfg['bg']};
         border: 1px solid {cfg['border']}40;
@@ -550,7 +550,7 @@ def render_insight_box(title: str, text: str, category: str = "Info"):
             {text}
         </div>
     </div>
-    """
+    """).strip()
     st.markdown(html_code, unsafe_allow_html=True)
 
 

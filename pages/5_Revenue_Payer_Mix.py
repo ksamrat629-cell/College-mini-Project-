@@ -4,6 +4,7 @@ MetroCare Health Systems | Operational Intelligence Platform
 US-07, US-08 | Features F-07, F-08
 """
 
+import textwrap
 import streamlit as st
 import pandas as pd
 import numpy as np
@@ -156,7 +157,7 @@ with sim_col1:
 
 with sim_col2:
     st.markdown(
-        f"""
+        textwrap.dedent(f"""
         <div style="background-color: #F8FAFC; border: 1px solid #CBD5E1; border-radius: 12px; padding: 18px;">
             <div style="font-weight: 700; color: #1E293B; font-size: 15px;">💡 Simulator Dynamics & ROI Analysis</div>
             <div style="font-size: 13px; color: #475569; margin-top: 8px; line-height: 1.6;">
@@ -167,7 +168,7 @@ with sim_col2:
                 • <b>Implementation Strategy:</b> 2-way WhatsApp appointment confirmations 48h prior + dynamic overbooking during peak morning hours.
             </div>
         </div>
-        """,
+        """).strip(),
         unsafe_allow_html=True
     )
 
