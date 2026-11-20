@@ -1,0 +1,281 @@
+visit_id,appointment_id,patient_id,doctor_id,department_id,visit_date,day_of_week,check_in_time,consultation_start_time,consultation_end_time,wait_time_minutes,consultation_duration_minutes,is_sla_breach,visit_type,appointment_type,primary_icd10_code,primary_diagnosis_name,disease_category,is_30day_readmission,csat_score
+80001,50001.0,1018,109,3,2026-05-01,Friday,2026-05-01 09:14:00,2026-05-01 09:53:00,2026-05-01 10:10:00,39,17,1,Emergency Triage,Pre-Scheduled,J20.9,Acute Bronchitis,Acute Infection,0,3.0
+80002,50002.0,1130,109,3,2026-04-01,Wednesday,2026-04-01 12:29:00,2026-04-01 12:53:00,2026-04-01 13:01:00,24,8,0,Follow-up,Pre-Scheduled,J06.9,Acute Upper Respiratory Infection,Acute Infection,0,5.0
+80003,50003.0,1149,122,8,2026-05-09,Saturday,2026-05-09 10:25:00,2026-05-09 10:59:00,2026-05-09 11:11:00,34,12,1,Follow-up,Pre-Scheduled,J01.9,Acute Sinusitis,Acute Infection,0,4.0
+80004,50004.0,1089,111,4,2026-04-21,Tuesday,2026-04-21 10:47:00,2026-04-21 11:29:00,2026-04-21 11:39:00,42,10,1,Routine Health Check,Pre-Scheduled,E11.9,Type 2 Diabetes Mellitus,Chronic Lifestyle,0,
+80005,50005.0,1083,107,3,2026-06-10,Wednesday,2026-06-10 08:51:00,2026-06-10 09:10:00,2026-06-10 09:36:00,19,26,0,First Consultation,Pre-Scheduled,J06.9,Acute Upper Respiratory Infection,Acute Infection,0,4.0
+80006,50006.0,1199,114,5,2026-05-16,Saturday,2026-05-16 17:35:00,2026-05-16 17:59:00,2026-05-16 18:23:00,24,24,0,Follow-up,Pre-Scheduled,C50.9,Malignant Neoplasm of Breast,Oncology,0,4.0
+80007,50007.0,1098,113,5,2026-06-30,Tuesday,2026-06-30 15:54:00,2026-06-30 16:07:00,2026-06-30 16:35:00,13,28,0,Routine Health Check,Pre-Scheduled,C34.9,Malignant Neoplasm of Bronchus/Lung,Oncology,0,5.0
+80008,50008.0,1127,102,1,2026-04-09,Thursday,2026-04-09 10:43:00,2026-04-09 11:40:00,2026-04-09 12:00:00,57,20,1,First Consultation,Pre-Scheduled,I10,Essential (Primary) Hypertension,Chronic Lifestyle,0,1.0
+80009,50009.0,1113,104,2,2026-01-18,Sunday,2026-01-18 18:36:00,2026-01-18 19:14:00,2026-01-18 19:19:00,38,5,1,Follow-up,Pre-Scheduled,M17.9,Osteoarthritis of Knee,Orthopedic Trauma,0,3.0
+80010,50010.0,1105,121,7,2026-05-15,Friday,2026-05-15 10:58:00,2026-05-15 11:14:00,2026-05-15 11:41:00,16,27,0,Emergency Triage,Pre-Scheduled,L20.9,Atopic Dermatitis / Eczema,Acute Infection,1,5.0
+80011,50012.0,1173,118,6,2026-06-24,Wednesday,2026-06-24 14:22:00,2026-06-24 14:28:00,2026-06-24 14:51:00,6,23,0,Follow-up,Pre-Scheduled,G43.9,Migraine Disorder,Neurological,0,5.0
+80012,50014.0,1074,108,3,2026-02-09,Monday,2026-02-09 10:51:00,2026-02-09 11:33:00,2026-02-09 12:04:00,42,31,1,First Consultation,Pre-Scheduled,J06.9,Acute Upper Respiratory Infection,Acute Infection,0,4.0
+80013,50016.0,1092,112,4,2026-05-30,Saturday,2026-05-30 17:30:00,2026-05-30 17:55:00,2026-05-30 18:15:00,165,20,0,Emergency Triage,Pre-Scheduled,K21.9,Gastro-Esophageal Reflux Disease,Chronic Lifestyle,0,4.0
+80014,50017.0,1175,106,2,2026-06-20,Saturday,2026-06-20 10:35:00,2026-06-20 11:17:00,2026-06-20 11:50:00,42,33,1,First Consultation,Pre-Scheduled,M17.9,Osteoarthritis of Knee,Orthopedic Trauma,0,4.0
+80015,50018.0,1159,122,8,2026-02-20,Friday,2026-02-20 11:25:00,2026-02-20 12:05:00,2026-02-20 12:27:00,40,22,1,First Consultation,Pre-Scheduled,J30.9,Allergic Rhinitis,Chronic Lifestyle,0,2.0
+80016,50019.0,1164,109,3,2026-05-14,Thursday,2026-05-14 11:42:00,2026-05-14 12:14:00,2026-05-14 12:36:00,32,22,1,First Consultation,Pre-Scheduled,A09,Infectious Gastroenteritis,Acute Infection,1,4.0
+80017,50020.0,1174,118,6,2026-04-13,Monday,2026-04-13 10:57:00,2026-04-13 11:33:00,2026-04-13 12:06:00,36,33,1,First Consultation,Pre-Scheduled,G40.9,Epilepsy / Recurrent Seizures,Neurological,0,4.0
+80018,50021.0,1077,121,7,2026-03-20,Friday,2026-03-20 14:58:00,2026-03-20 15:22:00,2026-03-20 15:43:00,24,21,0,Routine Health Check,Pre-Scheduled,L40.0,Psoriasis Vulgaris,Chronic Lifestyle,0,5.0
+80019,50023.0,1092,119,7,2026-01-20,Tuesday,2026-01-20 10:49:00,2026-01-20 11:12:00,2026-01-20 11:37:00,23,25,0,First Consultation,Pre-Scheduled,B35.9,Dermatophytosis / Fungal Infection,Acute Infection,0,5.0
+80020,50024.0,1169,113,5,2026-06-19,Friday,2026-06-19 11:26:00,2026-06-19 12:09:00,2026-06-19 12:34:00,43,25,1,Follow-up,Pre-Scheduled,C34.9,Malignant Neoplasm of Bronchus/Lung,Oncology,0,2.0
+80021,50025.0,1074,108,3,2026-03-12,Thursday,2026-03-12 09:29:00,2026-03-12 10:04:00,2026-03-12 10:14:00,35,10,1,Follow-up,Pre-Scheduled,J06.9,Acute Upper Respiratory Infection,Acute Infection,0,2.0
+80022,50026.0,1159,109,3,2026-07-02,Thursday,2026-07-02 16:31:00,2026-07-02 16:52:00,2026-07-02 17:05:00,21,13,0,Follow-up,Pre-Scheduled,J20.9,Acute Bronchitis,Acute Infection,0,4.0
+80023,50028.0,1149,112,4,2026-03-31,Tuesday,2026-03-31 16:20:00,2026-03-31 16:42:00,2026-03-31 16:59:00,22,17,0,Follow-up,Pre-Scheduled,K21.9,Gastro-Esophageal Reflux Disease,Chronic Lifestyle,0,3.0
+80024,50029.0,1107,106,2,2026-04-18,Saturday,2026-04-18 09:40:00,2026-04-18 10:32:00,2026-04-18 10:43:00,52,11,1,Follow-up,Pre-Scheduled,S82.0,Fracture of Patella,Orthopedic Trauma,0,2.0
+80025,50030.0,1070,106,2,2026-03-31,Tuesday,2026-03-31 16:22:00,2026-03-31 17:21:00,2026-03-31 17:33:00,59,12,1,Routine Health Check,Pre-Scheduled,M17.9,Osteoarthritis of Knee,Orthopedic Trauma,0,2.0
+80026,50031.0,1087,104,2,2026-02-20,Friday,2026-02-20 17:04:00,2026-02-20 17:53:00,2026-02-20 18:13:00,49,20,1,First Consultation,Pre-Scheduled,S82.0,Fracture of Patella,Orthopedic Trauma,0,2.0
+80027,50033.0,1068,118,6,2026-07-06,Monday,2026-07-06 15:20:00,2026-07-06 15:59:00,2026-07-06 16:22:00,39,23,1,Follow-up,Pre-Scheduled,G43.9,Migraine Disorder,Neurological,0,3.0
+80028,50034.0,1068,119,7,2026-02-11,Wednesday,2026-02-11 10:22:00,2026-02-11 10:46:00,2026-02-11 11:10:00,24,24,0,First Consultation,Pre-Scheduled,L40.0,Psoriasis Vulgaris,Chronic Lifestyle,0,3.0
+80029,50035.0,1121,101,1,2026-04-08,Wednesday,2026-04-08 11:09:00,2026-04-08 12:01:00,2026-04-08 12:20:00,52,19,1,First Consultation,Pre-Scheduled,I25.1,Atherosclerotic Heart Disease,Chronic Lifestyle,0,1.0
+80030,50036.0,1057,121,7,2026-07-13,Monday,2026-07-13 11:57:00,2026-07-13 12:37:00,2026-07-13 13:04:00,40,27,1,First Consultation,Pre-Scheduled,L40.0,Psoriasis Vulgaris,Chronic Lifestyle,0,2.0
+80031,50037.0,1105,104,2,2026-04-02,Thursday,2026-04-02 08:56:00,2026-04-02 09:38:00,2026-04-02 09:48:00,42,10,1,Follow-up,Pre-Scheduled,S82.0,Fracture of Patella,Orthopedic Trauma,0,2.0
+80032,50038.0,1030,104,2,2026-02-18,Wednesday,2026-02-18 14:48:00,2026-02-18 15:44:00,2026-02-18 16:03:00,56,19,1,Routine Health Check,Pre-Scheduled,M54.5,Chronic Low Back Pain,Orthopedic Trauma,0,2.0
+80033,50039.0,1095,122,8,2026-07-12,Sunday,2026-07-12 09:48:00,2026-07-12 10:14:00,2026-07-12 10:32:00,26,18,0,Follow-up,Pre-Scheduled,J01.9,Acute Sinusitis,Acute Infection,0,3.0
+80034,50040.0,1108,119,7,2026-05-01,Friday,2026-05-01 11:16:00,2026-05-01 11:49:00,2026-05-01 12:06:00,33,17,1,Follow-up,Pre-Scheduled,L40.0,Psoriasis Vulgaris,Chronic Lifestyle,0,3.0
+80035,50041.0,1126,120,7,2026-04-29,Wednesday,2026-04-29 08:54:00,2026-04-29 09:15:00,2026-04-29 09:37:00,21,22,0,Follow-up,Pre-Scheduled,B35.9,Dermatophytosis / Fungal Infection,Acute Infection,0,3.0
+80036,50043.0,1093,104,2,2026-06-03,Wednesday,2026-06-03 18:16:00,2026-06-03 18:46:00,2026-06-03 18:57:00,30,11,0,Follow-up,Pre-Scheduled,M17.9,Osteoarthritis of Knee,Orthopedic Trauma,0,4.0
+80037,50044.0,1166,112,4,2026-03-04,Wednesday,2026-03-04 14:11:00,2026-03-04 14:55:00,2026-03-04 15:08:00,44,13,1,Follow-up,Pre-Scheduled,K21.9,Gastro-Esophageal Reflux Disease,Chronic Lifestyle,0,2.0
+80038,50045.0,1117,103,1,2026-06-27,Saturday,2026-06-27 12:31:00,2026-06-27 13:00:00,2026-06-27 13:16:00,29,16,0,Follow-up,Pre-Scheduled,I10,Essential (Primary) Hypertension,Chronic Lifestyle,0,3.0
+80039,50046.0,1006,102,1,2026-02-16,Monday,2026-02-16 18:01:00,2026-02-16 18:50:00,2026-02-16 19:03:00,49,13,1,Follow-up,Pre-Scheduled,I10,Essential (Primary) Hypertension,Chronic Lifestyle,0,3.0
+80040,50047.0,1053,103,1,2026-03-09,Monday,2026-03-09 16:59:00,2026-03-09 17:32:00,2026-03-09 17:50:00,33,18,1,First Consultation,Pre-Scheduled,I25.1,Atherosclerotic Heart Disease,Chronic Lifestyle,1,4.0
+80041,50048.0,1060,111,4,2026-02-21,Saturday,2026-02-21 17:48:00,2026-02-21 18:01:00,2026-02-21 18:23:00,13,22,0,Follow-up,Pre-Scheduled,E11.9,Type 2 Diabetes Mellitus,Chronic Lifestyle,0,5.0
+80042,50049.0,1153,101,1,2026-03-26,Thursday,2026-03-26 12:01:00,2026-03-26 12:26:00,2026-03-26 12:37:00,25,11,0,Follow-up,Pre-Scheduled,I50.9,Congestive Heart Failure,Chronic Lifestyle,0,5.0
+80043,50050.0,1038,105,2,2026-02-12,Thursday,2026-02-12 09:37:00,2026-02-12 10:35:00,2026-02-12 10:43:00,58,8,1,Follow-up,Pre-Scheduled,M17.9,Osteoarthritis of Knee,Orthopedic Trauma,0,2.0
+80044,50051.0,1007,105,2,2026-06-14,Sunday,2026-06-14 10:23:00,2026-06-14 11:20:00,2026-06-14 11:34:00,57,14,1,Routine Health Check,Pre-Scheduled,S82.0,Fracture of Patella,Orthopedic Trauma,0,1.0
+80045,50052.0,1045,109,3,2026-05-02,Saturday,2026-05-02 10:58:00,2026-05-02 11:32:00,2026-05-02 11:44:00,34,12,1,Follow-up,Pre-Scheduled,J20.9,Acute Bronchitis,Acute Infection,0,2.0
+80046,50053.0,1191,103,1,2026-05-16,Saturday,2026-05-16 14:12:00,2026-05-16 14:50:00,2026-05-16 15:08:00,38,18,1,Follow-up,Pre-Scheduled,I10,Essential (Primary) Hypertension,Chronic Lifestyle,0,2.0
+80047,50055.0,1187,122,8,2026-06-28,Sunday,2026-06-28 09:15:00,2026-06-28 09:36:00,2026-06-28 10:01:00,21,25,0,First Consultation,Pre-Scheduled,J01.9,Acute Sinusitis,Acute Infection,0,5.0
+80048,50058.0,1150,118,6,2026-06-16,Tuesday,2026-06-16 16:31:00,2026-06-16 17:06:00,2026-06-16 17:32:00,35,26,1,First Consultation,Pre-Scheduled,G40.9,Epilepsy / Recurrent Seizures,Neurological,0,3.0
+80049,50060.0,1197,118,6,2026-05-05,Tuesday,2026-05-05 11:22:00,2026-05-05 11:39:00,2026-05-05 12:11:00,17,32,0,First Consultation,Pre-Scheduled,G43.9,Migraine Disorder,Neurological,0,4.0
+80050,50061.0,1059,114,5,2026-04-27,Monday,2026-04-27 12:37:00,2026-04-27 12:41:00,2026-04-27 13:10:00,4,29,0,Routine Health Check,Pre-Scheduled,C18.9,Malignant Neoplasm of Colon,Oncology,0,5.0
+80051,50062.0,1025,111,4,2026-04-20,Monday,2026-04-20 15:53:00,2026-04-20 16:16:00,2026-04-20 16:24:00,23,8,0,Follow-up,Pre-Scheduled,E11.9,Type 2 Diabetes Mellitus,Chronic Lifestyle,0,3.0
+80052,50063.0,1176,116,6,2026-02-07,Saturday,2026-02-07 11:18:00,2026-02-07 11:57:00,2026-02-07 12:25:00,39,28,1,Follow-up,Pre-Scheduled,G20,Parkinson Disease,Neurological,0,3.0
+80053,50065.0,1172,104,2,2026-04-30,Thursday,2026-04-30 16:32:00,2026-04-30 17:25:00,2026-04-30 17:49:00,53,24,1,Routine Health Check,Pre-Scheduled,S82.0,Fracture of Patella,Orthopedic Trauma,0,1.0
+80054,50066.0,1171,114,5,2026-01-28,Wednesday,2026-01-28 17:33:00,2026-01-28 17:58:00,2026-01-28 18:28:00,25,30,0,First Consultation,Pre-Scheduled,C34.9,Malignant Neoplasm of Bronchus/Lung,Oncology,0,4.0
+80055,50067.0,1154,110,4,2026-02-23,Monday,2026-02-23 17:32:00,2026-02-23 17:58:00,2026-02-23 18:10:00,26,12,0,Routine Health Check,Pre-Scheduled,K21.9,Gastro-Esophageal Reflux Disease,Chronic Lifestyle,0,4.0
+80056,50068.0,1058,104,2,2026-02-13,Friday,2026-02-13 10:11:00,2026-02-13 10:59:00,2026-02-13 11:23:00,48,24,1,First Consultation,Pre-Scheduled,M54.5,Chronic Low Back Pain,Orthopedic Trauma,0,4.0
+80057,50069.0,1147,108,3,2026-06-07,Sunday,2026-06-07 16:53:00,2026-06-07 17:22:00,2026-06-07 17:42:00,29,20,0,Routine Health Check,Pre-Scheduled,J20.9,Acute Bronchitis,Acute Infection,0,4.0
+80058,50070.0,1160,120,7,2026-01-21,Wednesday,2026-01-21 16:50:00,2026-01-21 16:59:00,2026-01-21 17:24:00,9,25,0,Follow-up,Pre-Scheduled,L40.0,Psoriasis Vulgaris,Chronic Lifestyle,0,4.0
+80059,50071.0,1169,123,8,2026-03-25,Wednesday,2026-03-25 10:55:00,2026-03-25 11:18:00,2026-03-25 11:34:00,23,16,0,Follow-up,Pre-Scheduled,J01.9,Acute Sinusitis,Acute Infection,0,5.0
+80060,50072.0,1080,111,4,2026-02-20,Friday,2026-02-20 11:17:00,2026-02-20 11:51:00,2026-02-20 12:02:00,34,11,1,Follow-up,Pre-Scheduled,K21.9,Gastro-Esophageal Reflux Disease,Chronic Lifestyle,0,4.0
+80061,50074.0,1097,114,5,2026-04-19,Sunday,2026-04-19 17:28:00,2026-04-19 18:00:00,2026-04-19 18:23:00,32,23,1,Routine Health Check,Pre-Scheduled,C50.9,Malignant Neoplasm of Breast,Oncology,0,4.0
+80062,50076.0,1041,120,7,2026-03-25,Wednesday,2026-03-25 09:50:00,2026-03-25 10:21:00,2026-03-25 10:43:00,31,22,1,Follow-up,Pre-Scheduled,L20.9,Atopic Dermatitis / Eczema,Acute Infection,0,4.0
+80063,50078.0,1089,114,5,2026-02-12,Thursday,2026-02-12 12:17:00,2026-02-12 12:30:00,2026-02-12 12:58:00,13,28,0,Routine Health Check,Pre-Scheduled,C18.9,Malignant Neoplasm of Colon,Oncology,0,5.0
+80064,50079.0,1174,119,7,2026-01-26,Monday,2026-01-26 12:31:00,2026-01-26 12:39:00,2026-01-26 12:55:00,8,16,0,Follow-up,Pre-Scheduled,L20.9,Atopic Dermatitis / Eczema,Acute Infection,0,5.0
+80065,50080.0,1154,102,1,2026-03-10,Tuesday,2026-03-10 09:05:00,2026-03-10 09:52:00,2026-03-10 10:07:00,47,15,1,Follow-up,Pre-Scheduled,I50.9,Congestive Heart Failure,Chronic Lifestyle,0,4.0
+80066,50081.0,1196,109,3,2026-01-16,Friday,2026-01-16 11:52:00,2026-01-16 12:33:00,2026-01-16 12:45:00,41,12,1,Follow-up,Pre-Scheduled,J06.9,Acute Upper Respiratory Infection,Acute Infection,0,3.0
+80067,50082.0,1111,106,2,2026-02-17,Tuesday,2026-02-17 10:25:00,2026-02-17 11:24:00,2026-02-17 11:39:00,59,15,1,Follow-up,Pre-Scheduled,M54.5,Chronic Low Back Pain,Orthopedic Trauma,0,1.0
+80068,50083.0,1181,108,3,2026-05-23,Saturday,2026-05-23 17:43:00,2026-05-23 18:20:00,2026-05-23 18:36:00,37,16,1,Follow-up,Pre-Scheduled,A09,Infectious Gastroenteritis,Acute Infection,0,3.0
+80069,50084.0,1172,112,4,2026-01-25,Sunday,2026-01-25 16:03:00,2026-01-25 16:42:00,2026-01-25 17:04:00,39,22,1,First Consultation,Pre-Scheduled,R50.9,Fever / Pyrexia of Unknown Origin,Acute Infection,0,3.0
+80070,50085.0,1118,103,1,2026-05-04,Monday,2026-05-04 11:31:00,2026-05-04 12:13:00,2026-05-04 12:20:00,42,7,1,Follow-up,Pre-Scheduled,I25.1,Atherosclerotic Heart Disease,Chronic Lifestyle,0,2.0
+80071,50087.0,1159,115,5,2026-02-06,Friday,2026-02-06 10:18:00,2026-02-06 10:36:00,2026-02-06 11:08:00,18,32,0,First Consultation,Pre-Scheduled,C50.9,Malignant Neoplasm of Breast,Oncology,0,4.0
+80072,50089.0,1057,111,4,2026-05-25,Monday,2026-05-25 09:59:00,2026-05-25 10:32:00,2026-05-25 10:43:00,33,11,1,Follow-up,Pre-Scheduled,E11.9,Type 2 Diabetes Mellitus,Chronic Lifestyle,0,
+80073,50090.0,1136,117,6,2026-04-14,Tuesday,2026-04-14 13:55:00,2026-04-14 13:59:00,2026-04-14 14:23:00,4,24,0,Routine Health Check,Pre-Scheduled,G40.9,Epilepsy / Recurrent Seizures,Neurological,0,5.0
+80074,50092.0,1045,120,7,2026-02-23,Monday,2026-02-23 12:42:00,2026-02-23 12:55:00,2026-02-23 13:18:00,13,23,0,First Consultation,Pre-Scheduled,L40.0,Psoriasis Vulgaris,Chronic Lifestyle,0,5.0
+80075,50093.0,1168,103,1,2026-05-21,Thursday,2026-05-21 09:49:00,2026-05-21 10:56:00,2026-05-21 11:02:00,67,6,1,Follow-up,Pre-Scheduled,I10,Essential (Primary) Hypertension,Chronic Lifestyle,0,2.0
+80076,50094.0,1145,119,7,2026-06-24,Wednesday,2026-06-24 08:17:00,2026-06-24 08:41:00,2026-06-24 08:57:00,24,16,0,Follow-up,Pre-Scheduled,L40.0,Psoriasis Vulgaris,Chronic Lifestyle,0,5.0
+80077,50095.0,1113,103,1,2026-03-26,Thursday,2026-03-26 11:16:00,2026-03-26 12:07:00,2026-03-26 12:26:00,51,19,1,Routine Health Check,Pre-Scheduled,I10,Essential (Primary) Hypertension,Chronic Lifestyle,1,1.0
+80078,50096.0,1091,117,6,2026-02-02,Monday,2026-02-02 09:10:00,2026-02-02 09:40:00,2026-02-02 10:17:00,30,37,0,First Consultation,Pre-Scheduled,G43.9,Migraine Disorder,Neurological,0,4.0
+80079,50097.0,1116,102,1,2026-02-03,Tuesday,2026-02-03 07:59:00,2026-02-03 08:31:00,2026-02-03 08:49:00,32,18,1,First Consultation,Pre-Scheduled,I10,Essential (Primary) Hypertension,Chronic Lifestyle,0,3.0
+80080,50098.0,1024,120,7,2026-05-13,Wednesday,2026-05-13 14:36:00,2026-05-13 14:40:00,2026-05-13 14:55:00,4,15,0,Follow-up,Pre-Scheduled,L40.0,Psoriasis Vulgaris,Chronic Lifestyle,0,5.0
+80081,50099.0,1190,102,1,2026-05-10,Sunday,2026-05-10 16:49:00,2026-05-10 17:33:00,2026-05-10 17:47:00,44,14,1,First Consultation,Pre-Scheduled,I10,Essential (Primary) Hypertension,Chronic Lifestyle,0,2.0
+80082,50100.0,1147,121,7,2026-05-16,Saturday,2026-05-16 16:58:00,2026-05-16 17:17:00,2026-05-16 17:33:00,19,16,0,Follow-up,Pre-Scheduled,L40.0,Psoriasis Vulgaris,Chronic Lifestyle,0,
+80083,50101.0,1016,115,5,2026-02-05,Thursday,2026-02-05 09:36:00,2026-02-05 10:09:00,2026-02-05 10:37:00,33,28,1,First Consultation,Pre-Scheduled,C50.9,Malignant Neoplasm of Breast,Oncology,0,4.0
+80084,50102.0,1045,102,1,2026-05-07,Thursday,2026-05-07 17:08:00,2026-05-07 18:10:00,2026-05-07 18:23:00,62,13,1,Follow-up,Pre-Scheduled,I25.1,Atherosclerotic Heart Disease,Chronic Lifestyle,0,1.0
+80085,50103.0,1157,106,2,2026-04-24,Friday,2026-04-24 10:54:00,2026-04-24 11:52:00,2026-04-24 12:06:00,58,14,1,Follow-up,Pre-Scheduled,M54.5,Chronic Low Back Pain,Orthopedic Trauma,0,2.0
+80086,50104.0,1087,122,8,2026-06-25,Thursday,2026-06-25 09:21:00,2026-06-25 09:50:00,2026-06-25 10:16:00,172,26,0,First Consultation,Pre-Scheduled,H66.9,Otitis Media,Acute Infection,0,4.0
+80087,50105.0,1017,111,4,2026-04-23,Thursday,2026-04-23 14:23:00,2026-04-23 14:51:00,2026-04-23 15:07:00,28,16,0,Routine Health Check,Pre-Scheduled,R50.9,Fever / Pyrexia of Unknown Origin,Acute Infection,0,4.0
+80088,50107.0,1037,112,4,2026-02-17,Tuesday,2026-02-17 11:23:00,2026-02-17 12:01:00,2026-02-17 12:20:00,38,19,1,First Consultation,Pre-Scheduled,K21.9,Gastro-Esophageal Reflux Disease,Chronic Lifestyle,0,3.0
+80089,50108.0,1022,110,4,2026-04-09,Thursday,2026-04-09 09:48:00,2026-04-09 10:36:00,2026-04-09 10:55:00,48,19,1,First Consultation,Pre-Scheduled,K21.9,Gastro-Esophageal Reflux Disease,Chronic Lifestyle,1,3.0
+80090,50109.0,1172,123,8,2026-07-09,Thursday,2026-07-09 08:13:00,2026-07-09 08:51:00,2026-07-09 09:07:00,38,16,1,First Consultation,Pre-Scheduled,J01.9,Acute Sinusitis,Acute Infection,0,3.0
+80091,50112.0,1020,110,4,2026-05-24,Sunday,2026-05-24 09:54:00,2026-05-24 10:22:00,2026-05-24 10:48:00,28,26,0,First Consultation,Pre-Scheduled,R50.9,Fever / Pyrexia of Unknown Origin,Acute Infection,0,3.0
+80092,50114.0,1042,106,2,2026-06-23,Tuesday,2026-06-23 11:43:00,2026-06-23 12:48:00,2026-06-23 13:08:00,65,20,1,Follow-up,Pre-Scheduled,M54.5,Chronic Low Back Pain,Orthopedic Trauma,0,1.0
+80093,50115.0,1043,124,8,2026-04-18,Saturday,2026-04-18 08:53:00,2026-04-18 09:24:00,2026-04-18 09:31:00,31,7,1,Follow-up,Pre-Scheduled,H66.9,Otitis Media,Acute Infection,0,4.0
+80094,50117.0,1121,107,3,2026-05-13,Wednesday,2026-05-13 10:09:00,2026-05-13 10:44:00,2026-05-13 10:54:00,35,10,1,Follow-up,Pre-Scheduled,A09,Infectious Gastroenteritis,Acute Infection,0,3.0
+80095,50118.0,1200,113,5,2026-02-25,Wednesday,2026-02-25 17:05:00,2026-02-25 17:41:00,2026-02-25 18:34:00,36,53,1,Emergency Triage,Pre-Scheduled,C50.9,Malignant Neoplasm of Breast,Oncology,0,2.0
+80096,50119.0,1155,105,2,2026-06-28,Sunday,2026-06-28 09:30:00,2026-06-28 10:26:00,2026-06-28 10:37:00,56,11,1,Follow-up,Pre-Scheduled,S82.0,Fracture of Patella,Orthopedic Trauma,0,1.0
+80097,50120.0,1096,118,6,2026-05-27,Wednesday,2026-05-27 16:18:00,2026-05-27 16:36:00,2026-05-27 17:05:00,18,29,0,First Consultation,Pre-Scheduled,G20,Parkinson Disease,Neurological,1,4.0
+80098,50121.0,1073,103,1,2026-05-10,Sunday,2026-05-10 09:34:00,2026-05-10 10:21:00,2026-05-10 10:35:00,47,14,1,Follow-up,Pre-Scheduled,I10,Essential (Primary) Hypertension,Chronic Lifestyle,0,2.0
+80099,50122.0,1038,114,5,2026-05-10,Sunday,2026-05-10 09:47:00,2026-05-10 10:28:00,2026-05-10 10:52:00,41,24,1,Follow-up,Pre-Scheduled,C50.9,Malignant Neoplasm of Breast,Oncology,0,3.0
+80100,50123.0,1007,114,5,2026-04-20,Monday,2026-04-20 18:33:00,2026-04-20 18:40:00,2026-04-20 18:59:00,7,19,0,Follow-up,Pre-Scheduled,C18.9,Malignant Neoplasm of Colon,Oncology,0,5.0
+80101,50125.0,1038,105,2,2026-01-24,Saturday,2026-01-24 16:00:00,2026-01-24 16:56:00,2026-01-24 17:17:00,56,21,1,Follow-up,Pre-Scheduled,M17.9,Osteoarthritis of Knee,Orthopedic Trauma,0,1.0
+80102,50126.0,1121,123,8,2026-07-14,Tuesday,2026-07-14 15:15:00,2026-07-14 15:33:00,2026-07-14 15:58:00,18,25,0,Emergency Triage,Pre-Scheduled,J01.9,Acute Sinusitis,Acute Infection,0,4.0
+80103,50128.0,1039,118,6,2026-05-30,Saturday,2026-05-30 15:45:00,2026-05-30 15:54:00,2026-05-30 16:20:00,9,26,0,Follow-up,Pre-Scheduled,G40.9,Epilepsy / Recurrent Seizures,Neurological,0,4.0
+80104,50129.0,1199,110,4,2026-01-27,Tuesday,2026-01-27 10:23:00,2026-01-27 11:09:00,2026-01-27 11:31:00,46,22,1,First Consultation,Pre-Scheduled,R50.9,Fever / Pyrexia of Unknown Origin,Acute Infection,0,3.0
+80105,50130.0,1164,120,7,2026-05-22,Friday,2026-05-22 15:53:00,2026-05-22 16:06:00,2026-05-22 16:21:00,13,15,0,First Consultation,Pre-Scheduled,B35.9,Dermatophytosis / Fungal Infection,Acute Infection,0,5.0
+80106,50131.0,1005,121,7,2026-02-20,Friday,2026-02-20 12:34:00,2026-02-20 12:52:00,2026-02-20 13:13:00,18,21,0,Routine Health Check,Pre-Scheduled,L40.0,Psoriasis Vulgaris,Chronic Lifestyle,0,
+80107,50132.0,1001,120,7,2026-03-03,Tuesday,2026-03-03 11:28:00,2026-03-03 11:53:00,2026-03-03 12:07:00,25,14,0,Follow-up,Pre-Scheduled,L40.0,Psoriasis Vulgaris,Chronic Lifestyle,0,3.0
+80108,50133.0,1022,117,6,2026-05-29,Friday,2026-05-29 11:10:00,2026-05-29 11:46:00,2026-05-29 12:12:00,36,26,1,Follow-up,Pre-Scheduled,G20,Parkinson Disease,Neurological,0,2.0
+80109,50134.0,1130,118,6,2026-01-26,Monday,2026-01-26 11:17:00,2026-01-26 11:39:00,2026-01-26 12:07:00,22,28,0,First Consultation,Pre-Scheduled,G40.9,Epilepsy / Recurrent Seizures,Neurological,0,3.0
+80110,50135.0,1096,109,3,2026-02-01,Sunday,2026-02-01 18:19:00,2026-02-01 18:37:00,2026-02-01 19:05:00,18,28,0,First Consultation,Pre-Scheduled,J06.9,Acute Upper Respiratory Infection,Acute Infection,0,5.0
+80111,50136.0,1188,122,8,2026-06-12,Friday,2026-06-12 09:20:00,2026-06-12 10:11:00,2026-06-12 10:20:00,51,9,1,Follow-up,Pre-Scheduled,J01.9,Acute Sinusitis,Acute Infection,0,3.0
+80112,50137.0,1086,105,2,2026-04-11,Saturday,2026-04-11 15:28:00,2026-04-11 16:10:00,2026-04-11 16:27:00,42,17,1,Routine Health Check,Pre-Scheduled,M54.5,Chronic Low Back Pain,Orthopedic Trauma,0,2.0
+80113,50139.0,1184,115,5,2026-01-26,Monday,2026-01-26 17:04:00,2026-01-26 17:28:00,2026-01-26 18:01:00,24,33,0,Routine Health Check,Pre-Scheduled,C34.9,Malignant Neoplasm of Bronchus/Lung,Oncology,0,5.0
+80114,50140.0,1011,111,4,2026-04-26,Sunday,2026-04-26 10:00:00,2026-04-26 10:37:00,2026-04-26 11:04:00,37,27,1,First Consultation,Pre-Scheduled,E11.9,Type 2 Diabetes Mellitus,Chronic Lifestyle,0,2.0
+80115,50141.0,1140,116,6,2026-03-29,Sunday,2026-03-29 17:37:00,2026-03-29 17:54:00,2026-03-29 18:16:00,17,22,0,Follow-up,Pre-Scheduled,G40.9,Epilepsy / Recurrent Seizures,Neurological,0,5.0
+80116,50143.0,1103,124,8,2026-04-11,Saturday,2026-04-11 16:33:00,2026-04-11 17:01:00,2026-04-11 17:19:00,28,18,0,Routine Health Check,Pre-Scheduled,J01.9,Acute Sinusitis,Acute Infection,0,3.0
+80117,50144.0,1128,123,8,2026-02-05,Thursday,2026-02-05 15:41:00,2026-02-05 16:21:00,2026-02-05 16:33:00,40,12,1,Follow-up,Pre-Scheduled,H66.9,Otitis Media,Acute Infection,0,
+80118,50145.0,1021,114,5,2026-03-02,Monday,2026-03-02 08:53:00,2026-03-02 08:57:00,2026-03-02 09:31:00,4,34,0,First Consultation,Pre-Scheduled,C18.9,Malignant Neoplasm of Colon,Oncology,1,5.0
+80119,50146.0,1083,104,2,2026-03-31,Tuesday,2026-03-31 12:22:00,2026-03-31 13:06:00,2026-03-31 13:20:00,44,14,1,Follow-up,Pre-Scheduled,S82.0,Fracture of Patella,Orthopedic Trauma,0,2.0
+80120,50147.0,1155,123,8,2026-04-14,Tuesday,2026-04-14 16:01:00,2026-04-14 16:05:00,2026-04-14 16:30:00,4,25,0,First Consultation,Pre-Scheduled,H66.9,Otitis Media,Acute Infection,0,5.0
+80121,50148.0,1187,112,4,2026-03-26,Thursday,2026-03-26 11:47:00,2026-03-26 12:23:00,2026-03-26 12:31:00,36,8,1,Follow-up,Pre-Scheduled,K21.9,Gastro-Esophageal Reflux Disease,Chronic Lifestyle,0,2.0
+80122,50149.0,1015,103,1,2026-04-18,Saturday,2026-04-18 11:01:00,2026-04-18 11:48:00,2026-04-18 12:19:00,47,31,1,Emergency Triage,Pre-Scheduled,I25.1,Atherosclerotic Heart Disease,Chronic Lifestyle,0,2.0
+80123,50150.0,1192,122,8,2026-02-20,Friday,2026-02-20 10:49:00,2026-02-20 11:15:00,2026-02-20 11:36:00,26,21,0,First Consultation,Pre-Scheduled,J01.9,Acute Sinusitis,Acute Infection,0,4.0
+80124,50151.0,1174,115,5,2026-03-16,Monday,2026-03-16 16:19:00,2026-03-16 16:49:00,2026-03-16 17:19:00,30,30,0,First Consultation,Pre-Scheduled,C34.9,Malignant Neoplasm of Bronchus/Lung,Oncology,0,4.0
+80125,50154.0,1081,121,7,2026-01-21,Wednesday,2026-01-21 15:31:00,2026-01-21 15:35:00,2026-01-21 15:52:00,4,17,0,Follow-up,Pre-Scheduled,B35.9,Dermatophytosis / Fungal Infection,Acute Infection,0,5.0
+80126,50155.0,1128,117,6,2026-03-23,Monday,2026-03-23 14:55:00,2026-03-23 15:03:00,2026-03-23 15:29:00,8,26,0,Routine Health Check,Pre-Scheduled,G40.9,Epilepsy / Recurrent Seizures,Neurological,0,5.0
+80127,50156.0,1181,115,5,2026-03-29,Sunday,2026-03-29 15:22:00,2026-03-29 15:35:00,2026-03-29 15:54:00,13,19,0,Follow-up,Pre-Scheduled,C50.9,Malignant Neoplasm of Breast,Oncology,0,5.0
+80128,50158.0,1175,111,4,2026-01-31,Saturday,2026-01-31 14:45:00,2026-01-31 15:10:00,2026-01-31 15:38:00,25,28,0,First Consultation,Pre-Scheduled,E11.9,Type 2 Diabetes Mellitus,Chronic Lifestyle,0,
+80129,50159.0,1075,110,4,2026-07-13,Monday,2026-07-13 11:02:00,2026-07-13 11:30:00,2026-07-13 11:53:00,28,23,0,First Consultation,Pre-Scheduled,R50.9,Fever / Pyrexia of Unknown Origin,Acute Infection,0,5.0
+80130,50162.0,1080,113,5,2026-05-17,Sunday,2026-05-17 12:26:00,2026-05-17 12:44:00,2026-05-17 13:11:00,18,27,0,First Consultation,Pre-Scheduled,C50.9,Malignant Neoplasm of Breast,Oncology,0,4.0
+80131,50163.0,1197,114,5,2026-02-16,Monday,2026-02-16 09:41:00,2026-02-16 10:04:00,2026-02-16 10:27:00,23,23,0,Follow-up,Pre-Scheduled,C50.9,Malignant Neoplasm of Breast,Oncology,0,4.0
+80132,50164.0,1165,103,1,2026-02-16,Monday,2026-02-16 15:41:00,2026-02-16 16:10:00,2026-02-16 16:33:00,29,23,0,First Consultation,Pre-Scheduled,I50.9,Congestive Heart Failure,Chronic Lifestyle,0,4.0
+80133,50165.0,1200,118,6,2026-02-17,Tuesday,2026-02-17 14:53:00,2026-02-17 14:57:00,2026-02-17 15:28:00,4,31,0,First Consultation,Pre-Scheduled,G43.9,Migraine Disorder,Neurological,0,5.0
+80134,50168.0,1142,109,3,2026-06-21,Sunday,2026-06-21 10:11:00,2026-06-21 10:45:00,2026-06-21 11:19:00,34,34,1,Emergency Triage,Pre-Scheduled,J06.9,Acute Upper Respiratory Infection,Acute Infection,0,3.0
+80135,50169.0,1129,121,7,2026-02-27,Friday,2026-02-27 09:10:00,2026-02-27 09:52:00,2026-02-27 10:01:00,42,9,1,Follow-up,Pre-Scheduled,L40.0,Psoriasis Vulgaris,Chronic Lifestyle,0,2.0
+80136,50170.0,1149,105,2,2026-06-18,Thursday,2026-06-18 09:03:00,2026-06-18 09:56:00,2026-06-18 10:13:00,53,17,1,Follow-up,Pre-Scheduled,M17.9,Osteoarthritis of Knee,Orthopedic Trauma,0,2.0
+80137,50172.0,1148,109,3,2026-06-10,Wednesday,2026-06-10 17:20:00,2026-06-10 17:50:00,2026-06-10 18:07:00,30,17,0,Follow-up,Pre-Scheduled,A09,Infectious Gastroenteritis,Acute Infection,0,
+80138,50173.0,1164,101,1,2026-05-22,Friday,2026-05-22 14:12:00,2026-05-22 14:41:00,2026-05-22 14:55:00,29,14,0,Follow-up,Pre-Scheduled,I25.1,Atherosclerotic Heart Disease,Chronic Lifestyle,0,4.0
+80139,50175.0,1077,115,5,2026-02-24,Tuesday,2026-02-24 15:49:00,2026-02-24 16:04:00,2026-02-24 16:38:00,15,34,0,First Consultation,Pre-Scheduled,C18.9,Malignant Neoplasm of Colon,Oncology,0,5.0
+80140,50176.0,1124,115,5,2026-02-20,Friday,2026-02-20 17:16:00,2026-02-20 17:36:00,2026-02-20 18:17:00,20,41,0,First Consultation,Pre-Scheduled,C50.9,Malignant Neoplasm of Breast,Oncology,0,4.0
+80141,50177.0,1184,111,4,2026-04-13,Monday,2026-04-13 18:15:00,2026-04-13 18:39:00,2026-04-13 19:09:00,24,30,0,First Consultation,Pre-Scheduled,E11.9,Type 2 Diabetes Mellitus,Chronic Lifestyle,1,3.0
+80142,50178.0,1034,112,4,2026-04-06,Monday,2026-04-06 15:59:00,2026-04-06 16:19:00,2026-04-06 16:30:00,20,11,0,Follow-up,Pre-Scheduled,E11.9,Type 2 Diabetes Mellitus,Chronic Lifestyle,0,4.0
+80143,50179.0,1032,109,3,2026-05-10,Sunday,2026-05-10 11:30:00,2026-05-10 12:07:00,2026-05-10 12:38:00,37,31,1,First Consultation,Pre-Scheduled,A09,Infectious Gastroenteritis,Acute Infection,1,2.0
+80144,50180.0,1025,102,1,2026-06-21,Sunday,2026-06-21 10:04:00,2026-06-21 11:00:00,2026-06-21 11:10:00,56,10,1,Follow-up,Pre-Scheduled,I10,Essential (Primary) Hypertension,Chronic Lifestyle,0,2.0
+80145,50184.0,1168,122,8,2026-02-11,Wednesday,2026-02-11 11:30:00,2026-02-11 11:56:00,2026-02-11 12:28:00,26,32,0,Emergency Triage,Pre-Scheduled,J01.9,Acute Sinusitis,Acute Infection,0,5.0
+80146,50186.0,1144,107,3,2026-04-17,Friday,2026-04-17 09:54:00,2026-04-17 10:39:00,2026-04-17 11:00:00,45,21,1,Follow-up,Pre-Scheduled,J20.9,Acute Bronchitis,Acute Infection,0,3.0
+80147,50187.0,1019,113,5,2026-06-23,Tuesday,2026-06-23 10:32:00,2026-06-23 10:56:00,2026-06-23 11:32:00,24,36,0,First Consultation,Pre-Scheduled,C50.9,Malignant Neoplasm of Breast,Oncology,0,5.0
+80148,50188.0,1031,105,2,2026-04-20,Monday,2026-04-20 15:38:00,2026-04-20 16:12:00,2026-04-20 16:20:00,34,8,1,Follow-up,Pre-Scheduled,M17.9,Osteoarthritis of Knee,Orthopedic Trauma,0,3.0
+80149,50190.0,1129,102,1,2026-04-10,Friday,2026-04-10 17:50:00,2026-04-10 18:45:00,2026-04-10 19:09:00,55,24,1,First Consultation,Pre-Scheduled,I10,Essential (Primary) Hypertension,Chronic Lifestyle,0,1.0
+80150,50191.0,1133,115,5,2026-02-19,Thursday,2026-02-19 10:55:00,2026-02-19 11:28:00,2026-02-19 11:51:00,33,23,1,Follow-up,Pre-Scheduled,C50.9,Malignant Neoplasm of Breast,Oncology,0,2.0
+80151,50192.0,1157,111,4,2026-04-01,Wednesday,2026-04-01 09:18:00,2026-04-01 09:52:00,2026-04-01 10:11:00,34,19,1,Routine Health Check,Pre-Scheduled,R50.9,Fever / Pyrexia of Unknown Origin,Acute Infection,0,4.0
+80152,50193.0,1130,117,6,2026-05-16,Saturday,2026-05-16 09:33:00,2026-05-16 10:12:00,2026-05-16 10:32:00,39,20,1,Follow-up,Pre-Scheduled,G40.9,Epilepsy / Recurrent Seizures,Neurological,0,3.0
+80153,50194.0,1095,111,4,2026-06-13,Saturday,2026-06-13 15:25:00,2026-06-13 15:50:00,2026-06-13 16:06:00,25,16,0,Follow-up,Pre-Scheduled,E11.9,Type 2 Diabetes Mellitus,Chronic Lifestyle,0,3.0
+80154,50196.0,1199,119,7,2026-01-28,Wednesday,2026-01-28 16:35:00,2026-01-28 17:05:00,2026-01-28 17:23:00,30,18,0,Routine Health Check,Pre-Scheduled,L20.9,Atopic Dermatitis / Eczema,Acute Infection,0,3.0
+80155,50199.0,1039,114,5,2026-05-23,Saturday,2026-05-23 11:27:00,2026-05-23 11:58:00,2026-05-23 12:21:00,31,23,1,Follow-up,Pre-Scheduled,C50.9,Malignant Neoplasm of Breast,Oncology,0,3.0
+80156,50200.0,1121,124,8,2026-02-19,Thursday,2026-02-19 10:21:00,2026-02-19 10:53:00,2026-02-19 11:03:00,32,10,1,Routine Health Check,Pre-Scheduled,H66.9,Otitis Media,Acute Infection,0,3.0
+80157,50201.0,1144,111,4,2026-07-03,Friday,2026-07-03 10:20:00,2026-07-03 11:12:00,2026-07-03 11:30:00,52,18,1,Follow-up,Pre-Scheduled,E11.9,Type 2 Diabetes Mellitus,Chronic Lifestyle,0,1.0
+80158,50202.0,1097,111,4,2026-02-28,Saturday,2026-02-28 11:19:00,2026-02-28 12:07:00,2026-02-28 12:28:00,48,21,1,Routine Health Check,Pre-Scheduled,R50.9,Fever / Pyrexia of Unknown Origin,Acute Infection,0,3.0
+80159,50203.0,1137,111,4,2026-06-20,Saturday,2026-06-20 09:19:00,2026-06-20 09:45:00,2026-06-20 10:00:00,26,15,0,Follow-up,Pre-Scheduled,E11.9,Type 2 Diabetes Mellitus,Chronic Lifestyle,0,3.0
+80160,50204.0,1064,109,3,2026-06-06,Saturday,2026-06-06 09:52:00,2026-06-06 10:31:00,2026-06-06 10:53:00,39,22,1,Emergency Triage,Pre-Scheduled,J06.9,Acute Upper Respiratory Infection,Acute Infection,0,2.0
+80161,50205.0,1077,110,4,2026-07-14,Tuesday,2026-07-14 10:17:00,2026-07-14 11:00:00,2026-07-14 11:21:00,43,21,1,First Consultation,Pre-Scheduled,E11.9,Type 2 Diabetes Mellitus,Chronic Lifestyle,0,3.0
+80162,50207.0,1140,113,5,2026-04-13,Monday,2026-04-13 08:50:00,2026-04-13 09:14:00,2026-04-13 09:56:00,24,42,0,First Consultation,Pre-Scheduled,C18.9,Malignant Neoplasm of Colon,Oncology,0,4.0
+80163,50208.0,1038,110,4,2026-02-04,Wednesday,2026-02-04 15:47:00,2026-02-04 16:07:00,2026-02-04 16:39:00,20,32,0,First Consultation,Pre-Scheduled,E11.9,Type 2 Diabetes Mellitus,Chronic Lifestyle,1,5.0
+80164,50209.0,1114,121,7,2026-03-10,Tuesday,2026-03-10 15:41:00,2026-03-10 15:45:00,2026-03-10 16:02:00,4,17,0,First Consultation,Pre-Scheduled,L40.0,Psoriasis Vulgaris,Chronic Lifestyle,0,5.0
+80165,50211.0,1151,108,3,2026-05-30,Saturday,2026-05-30 09:50:00,2026-05-30 10:14:00,2026-05-30 10:19:00,24,5,0,Follow-up,Pre-Scheduled,J20.9,Acute Bronchitis,Acute Infection,0,5.0
+80166,50213.0,1141,106,2,2026-05-17,Sunday,2026-05-17 09:21:00,2026-05-17 09:59:00,2026-05-17 10:18:00,38,19,1,Follow-up,Pre-Scheduled,M17.9,Osteoarthritis of Knee,Orthopedic Trauma,0,3.0
+80167,50214.0,1194,110,4,2026-02-06,Friday,2026-02-06 15:53:00,2026-02-06 16:21:00,2026-02-06 16:41:00,28,20,0,First Consultation,Pre-Scheduled,E11.9,Type 2 Diabetes Mellitus,Chronic Lifestyle,1,4.0
+80168,50215.0,1060,118,6,2026-01-24,Saturday,2026-01-24 16:29:00,2026-01-24 17:16:00,2026-01-24 17:48:00,47,32,1,First Consultation,Pre-Scheduled,G43.9,Migraine Disorder,Neurological,0,3.0
+80169,50216.0,1045,114,5,2026-01-24,Saturday,2026-01-24 10:20:00,2026-01-24 11:08:00,2026-01-24 11:39:00,48,31,1,Follow-up,Pre-Scheduled,C18.9,Malignant Neoplasm of Colon,Oncology,0,3.0
+80170,50217.0,1102,116,6,2026-03-30,Monday,2026-03-30 12:34:00,2026-03-30 12:46:00,2026-03-30 13:18:00,12,32,0,Routine Health Check,Pre-Scheduled,G43.9,Migraine Disorder,Neurological,0,5.0
+80171,50219.0,1035,117,6,2026-02-12,Thursday,2026-02-12 11:58:00,2026-02-12 12:40:00,2026-02-12 13:01:00,42,21,1,Follow-up,Pre-Scheduled,G43.9,Migraine Disorder,Neurological,0,3.0
+80172,50221.0,1076,119,7,2026-02-28,Saturday,2026-02-28 16:51:00,2026-02-28 16:55:00,2026-02-28 17:23:00,4,28,0,First Consultation,Pre-Scheduled,L40.0,Psoriasis Vulgaris,Chronic Lifestyle,1,5.0
+80173,50222.0,1164,113,5,2026-05-04,Monday,2026-05-04 11:40:00,2026-05-04 12:04:00,2026-05-04 12:37:00,24,33,0,First Consultation,Pre-Scheduled,C18.9,Malignant Neoplasm of Colon,Oncology,0,4.0
+80174,50223.0,1023,113,5,2026-02-19,Thursday,2026-02-19 08:31:00,2026-02-19 08:50:00,2026-02-19 09:16:00,19,26,0,Follow-up,Pre-Scheduled,C50.9,Malignant Neoplasm of Breast,Oncology,0,4.0
+80175,50224.0,1064,101,1,2026-05-09,Saturday,2026-05-09 14:12:00,2026-05-09 14:48:00,2026-05-09 15:03:00,36,15,1,Follow-up,Pre-Scheduled,I10,Essential (Primary) Hypertension,Chronic Lifestyle,0,3.0
+80176,50227.0,1181,110,4,2026-03-31,Tuesday,2026-03-31 10:26:00,2026-03-31 11:08:00,2026-03-31 11:14:00,42,6,1,Follow-up,Pre-Scheduled,R50.9,Fever / Pyrexia of Unknown Origin,Acute Infection,0,2.0
+80177,50228.0,1057,108,3,2026-02-23,Monday,2026-02-23 11:09:00,2026-02-23 11:28:00,2026-02-23 11:44:00,19,16,0,First Consultation,Pre-Scheduled,J06.9,Acute Upper Respiratory Infection,Acute Infection,0,3.0
+80178,50229.0,1156,112,4,2026-06-01,Monday,2026-06-01 10:03:00,2026-06-01 10:30:00,2026-06-01 10:47:00,27,17,0,Follow-up,Pre-Scheduled,R50.9,Fever / Pyrexia of Unknown Origin,Acute Infection,0,4.0
+80179,50230.0,1056,108,3,2026-02-04,Wednesday,2026-02-04 12:05:00,2026-02-04 12:32:00,2026-02-04 12:49:00,27,17,0,Routine Health Check,Pre-Scheduled,A09,Infectious Gastroenteritis,Acute Infection,1,3.0
+80180,50231.0,1136,123,8,2026-01-30,Friday,2026-01-30 07:53:00,2026-01-30 08:09:00,2026-01-30 08:28:00,16,19,0,Follow-up,Pre-Scheduled,J01.9,Acute Sinusitis,Acute Infection,0,4.0
+80181,50232.0,1130,107,3,2026-02-26,Thursday,2026-02-26 10:48:00,2026-02-26 11:21:00,2026-02-26 11:33:00,33,12,1,Follow-up,Pre-Scheduled,J06.9,Acute Upper Respiratory Infection,Acute Infection,0,3.0
+80182,50233.0,1134,115,5,2026-06-13,Saturday,2026-06-13 12:19:00,2026-06-13 12:45:00,2026-06-13 13:23:00,26,38,0,First Consultation,Pre-Scheduled,C50.9,Malignant Neoplasm of Breast,Oncology,0,4.0
+80183,50234.0,1131,115,5,2026-02-17,Tuesday,2026-02-17 11:07:00,2026-02-17 11:42:00,2026-02-17 12:03:00,35,21,1,Follow-up,Pre-Scheduled,C34.9,Malignant Neoplasm of Bronchus/Lung,Oncology,0,4.0
+80184,50235.0,1117,119,7,2026-07-06,Monday,2026-07-06 10:31:00,2026-07-06 10:54:00,2026-07-06 11:12:00,23,18,0,First Consultation,Pre-Scheduled,L20.9,Atopic Dermatitis / Eczema,Acute Infection,0,5.0
+80185,50236.0,1186,101,1,2026-03-11,Wednesday,2026-03-11 10:24:00,2026-03-11 11:10:00,2026-03-11 11:20:00,46,10,1,Follow-up,Pre-Scheduled,I25.1,Atherosclerotic Heart Disease,Chronic Lifestyle,0,3.0
+80186,50237.0,1012,114,5,2026-06-02,Tuesday,2026-06-02 09:50:00,2026-06-02 10:17:00,2026-06-02 10:50:00,27,33,0,First Consultation,Pre-Scheduled,C18.9,Malignant Neoplasm of Colon,Oncology,0,5.0
+80187,50238.0,1018,116,6,2026-03-02,Monday,2026-03-02 09:32:00,2026-03-02 10:04:00,2026-03-02 10:23:00,32,19,1,Follow-up,Pre-Scheduled,G43.9,Migraine Disorder,Neurological,0,2.0
+80188,50239.0,1197,121,7,2026-05-02,Saturday,2026-05-02 10:15:00,2026-05-02 10:49:00,2026-05-02 11:03:00,34,14,1,Follow-up,Pre-Scheduled,B35.9,Dermatophytosis / Fungal Infection,Acute Infection,0,4.0
+80189,50241.0,1168,112,4,2026-04-25,Saturday,2026-04-25 14:14:00,2026-04-25 14:31:00,2026-04-25 14:51:00,17,20,0,First Consultation,Pre-Scheduled,E11.9,Type 2 Diabetes Mellitus,Chronic Lifestyle,0,5.0
+80190,50242.0,1187,108,3,2026-01-20,Tuesday,2026-01-20 11:17:00,2026-01-20 11:39:00,2026-01-20 11:55:00,22,16,0,Follow-up,Pre-Scheduled,J20.9,Acute Bronchitis,Acute Infection,0,4.0
+80191,50243.0,1119,122,8,2026-05-31,Sunday,2026-05-31 10:18:00,2026-05-31 10:08:00,2026-05-31 11:16:00,32,26,1,First Consultation,Pre-Scheduled,H66.9,Otitis Media,Acute Infection,0,2.0
+80192,50245.0,1009,122,8,2026-03-17,Tuesday,2026-03-17 10:24:00,2026-03-17 10:52:00,2026-03-17 11:12:00,28,20,0,First Consultation,Pre-Scheduled,J01.9,Acute Sinusitis,Acute Infection,0,5.0
+80193,50246.0,1026,120,7,2026-07-06,Monday,2026-07-06 10:41:00,2026-07-06 11:22:00,2026-07-06 12:01:00,41,39,1,First Consultation,Pre-Scheduled,L40.0,Psoriasis Vulgaris,Chronic Lifestyle,0,4.0
+80194,50248.0,1199,102,1,2026-03-15,Sunday,2026-03-15 11:37:00,2026-03-15 12:28:00,2026-03-15 12:42:00,51,14,1,Follow-up,Pre-Scheduled,I50.9,Congestive Heart Failure,Chronic Lifestyle,0,1.0
+80195,50249.0,1188,119,7,2026-03-16,Monday,2026-03-16 15:52:00,2026-03-16 16:09:00,2026-03-16 16:19:00,17,10,0,Follow-up,Pre-Scheduled,B35.9,Dermatophytosis / Fungal Infection,Acute Infection,0,4.0
+80196,50250.0,1037,122,8,2026-05-28,Thursday,2026-05-28 08:42:00,2026-05-28 08:55:00,2026-05-28 09:17:00,13,22,0,Follow-up,Pre-Scheduled,J01.9,Acute Sinusitis,Acute Infection,0,5.0
+80197,50251.0,1077,109,3,2026-02-28,Saturday,2026-02-28 09:26:00,2026-02-28 09:51:00,2026-02-28 10:05:00,25,14,0,Follow-up,Pre-Scheduled,J06.9,Acute Upper Respiratory Infection,Acute Infection,0,5.0
+80198,50253.0,1165,122,8,2026-07-12,Sunday,2026-07-12 09:05:00,2026-07-12 09:31:00,2026-07-12 09:44:00,26,13,0,Follow-up,Pre-Scheduled,H66.9,Otitis Media,Acute Infection,0,4.0
+80199,50254.0,1039,110,4,2026-04-21,Tuesday,2026-04-21 15:29:00,2026-04-21 15:40:00,2026-04-21 16:00:00,11,20,0,First Consultation,Pre-Scheduled,E11.9,Type 2 Diabetes Mellitus,Chronic Lifestyle,1,5.0
+80200,50255.0,1138,116,6,2026-04-01,Wednesday,2026-04-01 12:21:00,2026-04-01 12:25:00,2026-04-01 12:53:00,4,28,0,Routine Health Check,Pre-Scheduled,G20,Parkinson Disease,Neurological,0,5.0
+80201,50256.0,1037,115,5,2026-04-30,Thursday,2026-04-30 18:11:00,2026-04-30 18:25:00,2026-04-30 18:51:00,14,26,0,Follow-up,Pre-Scheduled,C34.9,Malignant Neoplasm of Bronchus/Lung,Oncology,0,5.0
+80202,50257.0,1143,117,6,2026-03-21,Saturday,2026-03-21 09:09:00,2026-03-21 09:40:00,2026-03-21 10:04:00,31,24,1,Routine Health Check,Pre-Scheduled,G20,Parkinson Disease,Neurological,0,3.0
+80203,50260.0,1123,107,3,2026-04-02,Thursday,2026-04-02 11:22:00,2026-04-02 11:45:00,2026-04-02 11:58:00,23,13,0,Follow-up,Pre-Scheduled,J20.9,Acute Bronchitis,Acute Infection,0,5.0
+80204,50261.0,1004,107,3,2026-02-14,Saturday,2026-02-14 13:49:00,2026-02-14 14:18:00,2026-02-14 14:44:00,29,26,0,Emergency Triage,Pre-Scheduled,A09,Infectious Gastroenteritis,Acute Infection,0,4.0
+80205,50262.0,1194,116,6,2026-06-18,Thursday,2026-06-18 09:21:00,2026-06-18 09:36:00,2026-06-18 10:00:00,15,24,0,Follow-up,Pre-Scheduled,G40.9,Epilepsy / Recurrent Seizures,Neurological,0,5.0
+80206,50263.0,1102,108,3,2026-06-05,Friday,2026-06-05 11:08:00,2026-06-05 11:50:00,2026-06-05 12:17:00,42,27,1,First Consultation,Pre-Scheduled,J06.9,Acute Upper Respiratory Infection,Acute Infection,0,4.0
+80207,50264.0,1073,113,5,2026-04-03,Friday,2026-04-03 11:46:00,2026-04-03 12:07:00,2026-04-03 12:31:00,21,24,0,Follow-up,Pre-Scheduled,C18.9,Malignant Neoplasm of Colon,Oncology,0,5.0
+80208,50265.0,1132,116,6,2026-04-06,Monday,2026-04-06 08:50:00,2026-04-06 09:15:00,2026-04-06 09:40:00,25,25,0,Routine Health Check,Pre-Scheduled,G20,Parkinson Disease,Neurological,0,4.0
+80209,50268.0,1146,108,3,2026-03-21,Saturday,2026-03-21 10:37:00,2026-03-21 11:04:00,2026-03-21 11:19:00,27,15,0,Routine Health Check,Pre-Scheduled,J06.9,Acute Upper Respiratory Infection,Acute Infection,0,4.0
+80210,50270.0,1036,124,8,2026-06-02,Tuesday,2026-06-02 15:09:00,2026-06-02 15:25:00,2026-06-02 15:34:00,16,9,0,Follow-up,Pre-Scheduled,J01.9,Acute Sinusitis,Acute Infection,0,4.0
+80211,50271.0,1016,117,6,2026-01-23,Friday,2026-01-23 12:18:00,2026-01-23 12:37:00,2026-01-23 13:01:00,19,24,0,Follow-up,Pre-Scheduled,G43.9,Migraine Disorder,Neurological,0,5.0
+80212,50272.0,1020,122,8,2026-04-30,Thursday,2026-04-30 11:00:00,2026-04-30 11:34:00,2026-04-30 11:47:00,34,13,1,Follow-up,Pre-Scheduled,J30.9,Allergic Rhinitis,Chronic Lifestyle,0,3.0
+80213,50273.0,1162,108,3,2026-01-17,Saturday,2026-01-17 16:10:00,2026-01-17 16:27:00,2026-01-17 16:49:00,17,22,0,First Consultation,Pre-Scheduled,J20.9,Acute Bronchitis,Acute Infection,1,5.0
+80214,50274.0,1117,112,4,2026-07-04,Saturday,2026-07-04 17:29:00,2026-07-04 18:13:00,2026-07-04 18:32:00,44,19,1,Routine Health Check,Pre-Scheduled,K21.9,Gastro-Esophageal Reflux Disease,Chronic Lifestyle,0,2.0
+80215,50276.0,1106,101,1,2026-03-26,Thursday,2026-03-26 08:39:00,2026-03-26 09:11:00,2026-03-26 09:31:00,32,20,1,Routine Health Check,Pre-Scheduled,I25.1,Atherosclerotic Heart Disease,Chronic Lifestyle,0,3.0
+80216,50278.0,1039,108,3,2026-03-20,Friday,2026-03-20 09:35:00,2026-03-20 10:23:00,2026-03-20 10:49:00,48,26,1,First Consultation,Pre-Scheduled,J06.9,Acute Upper Respiratory Infection,Acute Infection,0,3.0
+80217,50279.0,1069,113,5,2026-05-12,Tuesday,2026-05-12 15:21:00,2026-05-12 15:37:00,2026-05-12 16:18:00,16,41,0,First Consultation,Pre-Scheduled,C34.9,Malignant Neoplasm of Bronchus/Lung,Oncology,1,5.0
+80218,50280.0,1179,108,3,2026-07-01,Wednesday,2026-07-01 11:34:00,2026-07-01 12:01:00,2026-07-01 12:30:00,27,29,0,First Consultation,Pre-Scheduled,A09,Infectious Gastroenteritis,Acute Infection,0,4.0
+80219,50281.0,1167,102,1,2026-04-21,Tuesday,2026-04-21 10:00:00,2026-04-21 10:48:00,2026-04-21 11:09:00,48,21,1,First Consultation,Pre-Scheduled,I10,Essential (Primary) Hypertension,Chronic Lifestyle,0,3.0
+80220,50282.0,1015,121,7,2026-02-05,Thursday,2026-02-05 09:55:00,2026-02-05 10:33:00,2026-02-05 10:52:00,38,19,1,Follow-up,Pre-Scheduled,L20.9,Atopic Dermatitis / Eczema,Acute Infection,0,2.0
+80221,50283.0,1112,121,7,2026-04-09,Thursday,2026-04-09 10:09:00,2026-04-09 10:40:00,2026-04-09 11:24:00,31,44,1,Emergency Triage,Pre-Scheduled,L20.9,Atopic Dermatitis / Eczema,Acute Infection,0,3.0
+80222,50284.0,1025,117,6,2026-03-10,Tuesday,2026-03-10 09:45:00,2026-03-10 10:20:00,2026-03-10 10:49:00,35,29,1,First Consultation,Pre-Scheduled,G20,Parkinson Disease,Neurological,0,3.0
+80223,50285.0,1178,119,7,2026-05-16,Saturday,2026-05-16 15:25:00,2026-05-16 15:39:00,2026-05-16 15:59:00,14,20,0,Routine Health Check,Pre-Scheduled,L20.9,Atopic Dermatitis / Eczema,Acute Infection,1,5.0
+80224,50286.0,1020,122,8,2026-06-08,Monday,2026-06-08 18:33:00,2026-06-08 19:03:00,2026-06-08 19:21:00,30,18,0,Follow-up,Pre-Scheduled,H66.9,Otitis Media,Acute Infection,0,4.0
+80225,50287.0,1046,111,4,2026-01-19,Monday,2026-01-19 10:51:00,2026-01-19 11:32:00,2026-01-19 11:43:00,41,11,1,Routine Health Check,Pre-Scheduled,E11.9,Type 2 Diabetes Mellitus,Chronic Lifestyle,0,4.0
+80226,50288.0,1151,105,2,2026-04-26,Sunday,2026-04-26 15:40:00,2026-04-26 16:26:00,2026-04-26 16:42:00,46,16,1,Follow-up,Pre-Scheduled,S82.0,Fracture of Patella,Orthopedic Trauma,0,2.0
+80227,50289.0,1077,106,2,2026-04-24,Friday,2026-04-24 17:20:00,2026-04-24 18:12:00,2026-04-24 18:28:00,52,16,1,Follow-up,Pre-Scheduled,M17.9,Osteoarthritis of Knee,Orthopedic Trauma,0,1.0
+80228,50290.0,1139,111,4,2026-07-10,Friday,2026-07-10 16:30:00,2026-07-10 16:42:00,2026-07-10 16:50:00,12,8,0,Routine Health Check,Pre-Scheduled,K21.9,Gastro-Esophageal Reflux Disease,Chronic Lifestyle,1,5.0
+80229,50291.0,1129,124,8,2026-02-09,Monday,2026-02-09 09:10:00,2026-02-09 09:44:00,2026-02-09 10:07:00,34,23,1,First Consultation,Pre-Scheduled,J30.9,Allergic Rhinitis,Chronic Lifestyle,0,3.0
+80230,50292.0,1020,111,4,2026-06-16,Tuesday,2026-06-16 17:36:00,2026-06-16 18:02:00,2026-06-16 18:22:00,26,20,0,Routine Health Check,Pre-Scheduled,R50.9,Fever / Pyrexia of Unknown Origin,Acute Infection,0,4.0
+80231,,1179,118,6,2026-06-12,Friday,2026-06-12 15:16:00,2026-06-12 16:04:00,2026-06-12 16:25:00,48,21,1,First Consultation,Walk-in,G20,Parkinson Disease,Neurological,0,2.0
+80232,,1013,113,5,2026-06-20,Saturday,2026-06-20 08:35:00,2026-06-20 09:25:00,2026-06-20 09:39:00,50,14,1,First Consultation,Walk-in,C34.9,Malignant Neoplasm of Bronchus/Lung,Oncology,0,2.0
+80233,,1110,103,1,2026-04-10,Friday,2026-04-10 09:52:00,2026-04-10 10:35:00,2026-04-10 11:04:00,43,29,1,First Consultation,Walk-in,I50.9,Congestive Heart Failure,Chronic Lifestyle,0,4.0
+80234,,1025,101,1,2026-03-18,Wednesday,2026-03-18 08:10:00,2026-03-18 08:21:00,2026-03-18 08:37:00,11,16,0,First Consultation,Walk-in,I50.9,Congestive Heart Failure,Chronic Lifestyle,0,4.0
+80235,,1030,110,4,2026-05-06,Wednesday,2026-05-06 10:30:00,2026-05-06 10:53:00,2026-05-06 11:04:00,23,11,0,First Consultation,Walk-in,R50.9,Fever / Pyrexia of Unknown Origin,Acute Infection,0,4.0
+80236,,1165,118,6,2026-05-04,Monday,2026-05-04 10:11:00,2026-05-04 10:54:00,2026-05-04 11:17:00,43,23,1,First Consultation,Walk-in,G40.9,Epilepsy / Recurrent Seizures,Neurological,0,4.0
+80237,,1115,102,1,2026-04-02,Thursday,2026-04-02 10:28:00,2026-04-02 11:04:00,2026-04-02 11:20:00,36,16,1,Routine Health Check,Walk-in,I25.1,Atherosclerotic Heart Disease,Chronic Lifestyle,0,4.0
+80238,,1145,102,1,2026-03-04,Wednesday,2026-03-04 11:48:00,2026-03-04 12:27:00,2026-03-04 12:42:00,39,15,1,First Consultation,Walk-in,I50.9,Congestive Heart Failure,Chronic Lifestyle,0,4.0
+80239,,1089,118,6,2026-05-10,Sunday,2026-05-10 16:48:00,2026-05-10 17:26:00,2026-05-10 17:50:00,38,24,1,First Consultation,Walk-in,G20,Parkinson Disease,Neurological,0,4.0
+80240,,1100,117,6,2026-05-12,Tuesday,2026-05-12 08:34:00,2026-05-12 09:16:00,2026-05-12 09:40:00,42,24,1,First Consultation,Walk-in,G20,Parkinson Disease,Neurological,0,4.0
+80241,,1061,116,6,2026-04-11,Saturday,2026-04-11 08:05:00,2026-04-11 08:56:00,2026-04-11 09:17:00,51,21,1,Routine Health Check,Walk-in,G40.9,Epilepsy / Recurrent Seizures,Neurological,0,2.0
+80242,,1129,119,7,2026-06-06,Saturday,2026-06-06 14:51:00,2026-06-06 15:38:00,2026-06-06 16:12:00,47,34,1,Routine Health Check,Walk-in,B35.9,Dermatophytosis / Fungal Infection,Acute Infection,0,2.0
+80243,,1031,115,5,2026-03-10,Tuesday,2026-03-10 09:10:00,2026-03-10 09:38:00,2026-03-10 09:45:00,28,7,0,First Consultation,Walk-in,C50.9,Malignant Neoplasm of Breast,Oncology,0,4.0
+80244,,1109,103,1,2026-05-16,Saturday,2026-05-16 11:12:00,2026-05-16 12:02:00,2026-05-16 12:21:00,50,19,1,First Consultation,Walk-in,I50.9,Congestive Heart Failure,Chronic Lifestyle,0,2.0
+80245,,1082,124,8,2026-02-11,Wednesday,2026-02-11 09:05:00,2026-02-11 10:05:00,2026-02-11 10:30:00,60,25,1,First Consultation,Walk-in,J01.9,Acute Sinusitis,Acute Infection,0,2.0
+80246,,1071,117,6,2026-05-22,Friday,2026-05-22 10:58:00,2026-05-22 11:21:00,2026-05-22 11:43:00,23,22,0,Routine Health Check,Walk-in,G43.9,Migraine Disorder,Neurological,0,4.0
+80247,,1134,114,5,2026-02-22,Sunday,2026-02-22 10:26:00,2026-02-22 11:00:00,2026-02-22 11:12:00,34,12,1,First Consultation,Walk-in,C50.9,Malignant Neoplasm of Breast,Oncology,0,4.0
+80248,,1195,104,2,2026-02-21,Saturday,2026-02-21 09:36:00,2026-02-21 10:19:00,2026-02-21 10:37:00,43,18,1,Routine Health Check,Walk-in,M54.5,Chronic Low Back Pain,Orthopedic Trauma,0,4.0
+80249,,1089,114,5,2026-04-02,Thursday,2026-04-02 10:24:00,2026-04-02 11:02:00,2026-04-02 11:30:00,38,28,1,Routine Health Check,Walk-in,C18.9,Malignant Neoplasm of Colon,Oncology,0,4.0
+80250,,1010,106,2,2026-04-05,Sunday,2026-04-05 10:25:00,2026-04-05 11:01:00,2026-04-05 11:17:00,36,16,1,Routine Health Check,Walk-in,M54.5,Chronic Low Back Pain,Orthopedic Trauma,0,4.0
+80251,,1103,102,1,2026-05-06,Wednesday,2026-05-06 09:56:00,2026-05-06 10:25:00,2026-05-06 10:42:00,29,17,0,First Consultation,Walk-in,I25.1,Atherosclerotic Heart Disease,Chronic Lifestyle,0,4.0
+80252,,1122,109,3,2026-04-30,Thursday,2026-04-30 08:01:00,2026-04-30 08:35:00,2026-04-30 08:41:00,34,6,1,First Consultation,Walk-in,A09,Infectious Gastroenteritis,Acute Infection,0,4.0
+80253,,1072,116,6,2026-02-19,Thursday,2026-02-19 09:55:00,2026-02-19 10:11:00,2026-02-19 10:33:00,16,22,0,Routine Health Check,Walk-in,G43.9,Migraine Disorder,Neurological,0,4.0
+80254,,1114,111,4,2026-04-03,Friday,2026-04-03 09:46:00,2026-04-03 10:21:00,2026-04-03 10:39:00,35,18,1,First Consultation,Walk-in,R50.9,Fever / Pyrexia of Unknown Origin,Acute Infection,0,4.0
+80255,,1114,107,3,2026-05-09,Saturday,2026-05-09 08:47:00,2026-05-09 09:20:00,2026-05-09 09:33:00,33,13,1,Routine Health Check,Walk-in,A09,Infectious Gastroenteritis,Acute Infection,0,4.0
+80256,,1015,117,6,2026-03-06,Friday,2026-03-06 11:04:00,2026-03-06 11:48:00,2026-03-06 12:22:00,44,34,1,First Consultation,Walk-in,G40.9,Epilepsy / Recurrent Seizures,Neurological,0,4.0
+80257,,1200,117,6,2026-06-19,Friday,2026-06-19 09:01:00,2026-06-19 09:36:00,2026-06-19 09:58:00,35,22,1,Routine Health Check,Walk-in,G43.9,Migraine Disorder,Neurological,0,4.0
+80258,,1015,108,3,2026-02-02,Monday,2026-02-02 08:29:00,2026-02-02 08:54:00,2026-02-02 09:13:00,25,19,0,Routine Health Check,Walk-in,J06.9,Acute Upper Respiratory Infection,Acute Infection,0,4.0
+80259,,1071,112,4,2026-05-23,Saturday,2026-05-23 09:32:00,2026-05-23 10:25:00,2026-05-23 10:43:00,53,18,1,First Consultation,Walk-in,R50.9,Fever / Pyrexia of Unknown Origin,Acute Infection,0,2.0
+80260,,1008,108,3,2026-04-30,Thursday,2026-04-30 09:31:00,2026-04-30 10:03:00,2026-04-30 10:17:00,32,14,1,Routine Health Check,Walk-in,J20.9,Acute Bronchitis,Acute Infection,0,4.0
+80261,,1122,119,7,2026-06-15,Monday,2026-06-15 09:22:00,2026-06-15 09:34:00,2026-06-15 09:42:00,12,8,0,Routine Health Check,Walk-in,L20.9,Atopic Dermatitis / Eczema,Acute Infection,0,4.0
+80262,,1192,123,8,2026-02-17,Tuesday,2026-02-17 15:18:00,2026-02-17 16:06:00,2026-02-17 16:33:00,48,27,1,First Consultation,Walk-in,H66.9,Otitis Media,Acute Infection,0,2.0
+80263,,1147,107,3,2026-03-22,Sunday,2026-03-22 09:41:00,2026-03-22 10:12:00,2026-03-22 10:30:00,31,18,1,First Consultation,Walk-in,J06.9,Acute Upper Respiratory Infection,Acute Infection,0,4.0
+80264,,1105,117,6,2026-01-30,Friday,2026-01-30 09:55:00,2026-01-30 10:35:00,2026-01-30 10:49:00,40,14,1,Routine Health Check,Walk-in,G20,Parkinson Disease,Neurological,1,4.0
+80265,,1166,106,2,2026-06-27,Saturday,2026-06-27 10:51:00,2026-06-27 11:25:00,2026-06-27 11:37:00,34,12,1,Routine Health Check,Walk-in,M54.5,Chronic Low Back Pain,Orthopedic Trauma,0,4.0
+80266,,1079,123,8,2026-07-08,Wednesday,2026-07-08 09:17:00,2026-07-08 09:42:00,2026-07-08 09:58:00,25,16,0,Routine Health Check,Walk-in,J01.9,Acute Sinusitis,Acute Infection,0,4.0
+80267,,1118,109,3,2026-03-21,Saturday,2026-03-21 09:29:00,2026-03-21 10:05:00,2026-03-21 10:23:00,36,18,1,Routine Health Check,Walk-in,A09,Infectious Gastroenteritis,Acute Infection,0,4.0
+80268,,1102,119,7,2026-02-20,Friday,2026-02-20 08:00:00,2026-02-20 08:45:00,2026-02-20 09:01:00,45,16,1,Routine Health Check,Walk-in,B35.9,Dermatophytosis / Fungal Infection,Acute Infection,0,4.0
+80269,,1096,118,6,2026-07-09,Thursday,2026-07-09 10:38:00,2026-07-09 11:00:00,2026-07-09 11:26:00,22,26,0,Routine Health Check,Walk-in,G20,Parkinson Disease,Neurological,0,4.0
+80270,,1124,103,1,2026-04-21,Tuesday,2026-04-21 10:17:00,2026-04-21 10:57:00,2026-04-21 11:19:00,40,22,1,First Consultation,Walk-in,I50.9,Congestive Heart Failure,Chronic Lifestyle,0,4.0
+80271,,1168,123,8,2026-04-11,Saturday,2026-04-11 14:12:00,2026-04-11 14:41:00,2026-04-11 15:01:00,29,20,0,First Consultation,Walk-in,H66.9,Otitis Media,Acute Infection,0,4.0
+80272,,1015,120,7,2026-05-08,Friday,2026-05-08 15:42:00,2026-05-08 16:20:00,2026-05-08 16:33:00,38,13,1,Routine Health Check,Walk-in,L20.9,Atopic Dermatitis / Eczema,Acute Infection,0,4.0
+80273,,1168,116,6,2026-04-10,Friday,2026-04-10 08:16:00,2026-04-10 08:53:00,2026-04-10 09:09:00,37,16,1,Routine Health Check,Walk-in,G40.9,Epilepsy / Recurrent Seizures,Neurological,0,4.0
+80274,,1150,123,8,2026-06-20,Saturday,2026-06-20 09:52:00,2026-06-20 11:07:00,2026-06-20 11:22:00,75,15,1,Routine Health Check,Walk-in,H66.9,Otitis Media,Acute Infection,0,2.0
+80275,,1176,118,6,2026-07-07,Tuesday,2026-07-07 08:50:00,2026-07-07 09:30:00,2026-07-07 09:41:00,40,11,1,Routine Health Check,Walk-in,G40.9,Epilepsy / Recurrent Seizures,Neurological,0,4.0
+80276,,1130,110,4,2026-03-09,Monday,2026-03-09 09:53:00,2026-03-09 10:42:00,2026-03-09 11:07:00,49,25,1,First Consultation,Walk-in,K21.9,Gastro-Esophageal Reflux Disease,Chronic Lifestyle,0,2.0
+80277,,1025,116,6,2026-02-26,Thursday,2026-02-26 11:47:00,2026-02-26 12:15:00,2026-02-26 12:43:00,28,28,0,First Consultation,Walk-in,G40.9,Epilepsy / Recurrent Seizures,Neurological,0,4.0
+80278,,1047,122,8,2026-04-20,Monday,2026-04-20 10:41:00,2026-04-20 11:05:00,2026-04-20 11:16:00,24,11,0,First Consultation,Walk-in,H66.9,Otitis Media,Acute Infection,0,4.0
+80279,,1079,114,5,2026-04-19,Sunday,2026-04-19 11:23:00,2026-04-19 12:20:00,2026-04-19 12:36:00,57,16,1,First Consultation,Walk-in,C34.9,Malignant Neoplasm of Bronchus/Lung,Oncology,0,2.0
+80280,,1031,116,6,2026-02-07,Saturday,2026-02-07 11:55:00,2026-02-07 12:07:00,2026-02-07 12:20:00,12,13,0,Routine Health Check,Walk-in,G20,Parkinson Disease,Neurological,0,4.0

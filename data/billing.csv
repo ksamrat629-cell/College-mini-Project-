@@ -1,0 +1,281 @@
+billing_id,visit_id,gross_billed_amount,discount_amount,net_billed_amount,payer_type,insurance_tpa_name,payment_mode,payment_status,billing_date
+90001,80001,800.0,0.0,800.0,Private Insurance,Max Bupa Health,TPA Direct Settlement,Settled,2026-05-01
+90002,80002,1600.0,0.0,1600.0,Self-Pay,,Credit Card,Settled,2026-04-01
+90003,80003,1000.0,0.0,1000.0,Private Insurance,Max Bupa Health,TPA Direct Settlement,Pending TPA Claim,2026-05-09
+90004,80004,600.0,0.0,600.0,Private Insurance,ICICI Lombard,TPA Direct Settlement,Pending TPA Claim,2026-04-21
+90005,80005,2000.0,0.0,2000.0,Private Insurance,Max Bupa Health,TPA Direct Settlement,Settled,2026-06-10
+90006,80006,1800.0,0.0,1800.0,Self-Pay,,Cash,Settled,2026-05-16
+90007,80007,1800.0,0.0,1800.0,Self-Pay,,UPI,Settled,2026-06-30
+90008,80008,3700.0,0.0,3700.0,Self-Pay,,Cash,Settled,2026-04-09
+90009,80009,1800.0,0.0,1800.0,Self-Pay,,Debit Card,Settled,2026-01-18
+90010,80010,750.0,0.0,750.0,Government Scheme,ECHS,TPA Direct Settlement,Settled,2026-05-15
+90011,80011,1700.0,0.0,1700.0,Self-Pay,,Debit Card,Settled,2026-06-24
+90012,80012,3300.0,200.0,3100.0,Self-Pay,,Cash,Settled,2026-02-09
+90013,80013,1800.0,0.0,1800.0,Self-Pay,,Credit Card,Settled,2026-05-30
+90014,80014,5800.0,0.0,5800.0,Private Insurance,Star Health Insurance,TPA Direct Settlement,Pending TPA Claim,2026-06-20
+90015,80015,1200.0,0.0,1200.0,Private Insurance,Care Health Insurance,TPA Direct Settlement,Settled,2026-02-20
+90016,80016,1300.0,200.0,1100.0,Self-Pay,,Credit Card,Settled,2026-05-14
+90017,80017,1900.0,200.0,1700.0,Self-Pay,,UPI,Settled,2026-04-13
+90018,80018,1050.0,0.0,1050.0,Self-Pay,,Debit Card,Settled,2026-03-20
+90019,80019,5550.0,0.0,5550.0,Self-Pay,,Credit Card,Settled,2026-01-20
+90020,80020,1800.0,0.0,1800.0,Private Insurance,Max Bupa Health,TPA Direct Settlement,Settled,2026-06-19
+90021,80021,1100.0,0.0,1100.0,Private Insurance,Max Bupa Health,TPA Direct Settlement,Pending TPA Claim,2026-03-12
+90022,80022,1100.0,200.0,900.0,Self-Pay,,Cash,Settled,2026-07-02
+90023,80023,1400.0,0.0,1400.0,Self-Pay,,Cash,Settled,2026-03-31
+90024,80024,1800.0,200.0,1600.0,Government Scheme,Ayushman Bharat (PM-JAY),TPA Direct Settlement,Settled,2026-04-18
+90025,80025,1000.0,0.0,1000.0,Self-Pay,,UPI,Settled,2026-03-31
+90026,80026,3500.0,0.0,3500.0,Private Insurance,Care Health Insurance,TPA Direct Settlement,Settled,2026-02-20
+90027,80027,2200.0,0.0,2200.0,Self-Pay,,UPI,Settled,2026-07-06
+90028,80028,750.0,0.0,750.0,Private Insurance,Star Health Insurance,TPA Direct Settlement,Pending TPA Claim,2026-02-11
+90029,80029,3700.0,0.0,3700.0,Self-Pay,,Credit Card,Settled,2026-04-08
+90030,80030,3250.0,0.0,3250.0,Private Insurance,Max Bupa Health,TPA Direct Settlement,Settled,2026-07-13
+90031,80031,1300.0,0.0,1300.0,Government Scheme,CGHS,TPA Direct Settlement,Settled,2026-04-02
+90032,80032,1800.0,0.0,1800.0,Self-Pay,,Cash,Settled,2026-02-18
+90033,80033,1000.0,0.0,1000.0,Self-Pay,,UPI,Settled,2026-07-12
+90034,80034,1550.0,0.0,1550.0,Self-Pay,,UPI,Settled,2026-05-01
+90035,80035,1050.0,200.0,850.0,Self-Pay,,UPI,Settled,2026-04-29
+90036,80036,1300.0,0.0,1300.0,Self-Pay,,Cash,Settled,2026-06-03
+90037,80037,900.0,0.0,900.0,Self-Pay,,Cash,Settled,2026-03-04
+90038,80038,1500.0,0.0,1500.0,Private Insurance,Care Health Insurance,TPA Direct Settlement,Pending TPA Claim,2026-06-27
+90039,80039,1200.0,0.0,1200.0,Self-Pay,,Cash,Settled,2026-02-16
+90040,80040,3700.0,0.0,3700.0,Self-Pay,,UPI,Settled,2026-03-09
+90041,80041,600.0,0.0,600.0,Government Scheme,CGHS,TPA Direct Settlement,Settled,2026-02-21
+90042,80042,2000.0,0.0,2000.0,Self-Pay,,UPI,Settled,2026-03-26
+90043,80043,1800.0,200.0,1600.0,Government Scheme,Ayushman Bharat (PM-JAY),TPA Direct Settlement,Settled,2026-02-12
+90044,80044,1300.0,0.0,1300.0,Self-Pay,,Debit Card,Settled,2026-06-14
+90045,80045,1100.0,0.0,1100.0,Government Scheme,CGHS,TPA Direct Settlement,Settled,2026-05-02
+90046,80046,1200.0,0.0,1200.0,Private Insurance,Care Health Insurance,TPA Direct Settlement,Settled,2026-05-16
+90047,80047,1900.0,0.0,1900.0,Government Scheme,CGHS,TPA Direct Settlement,Settled,2026-06-28
+90048,80048,1400.0,200.0,1200.0,Government Scheme,CGHS,TPA Direct Settlement,Settled,2026-06-16
+90049,80049,1900.0,0.0,1900.0,Self-Pay,,Debit Card,Settled,2026-05-05
+90050,80050,2300.0,0.0,2300.0,Government Scheme,Ayushman Bharat (PM-JAY),TPA Direct Settlement,Settled,2026-04-27
+90051,80051,900.0,0.0,900.0,Self-Pay,,Cash,Settled,2026-04-20
+90052,80052,1400.0,0.0,1400.0,Self-Pay,,Debit Card,Settled,2026-02-07
+90053,80053,1300.0,0.0,1300.0,Self-Pay,,Debit Card,Settled,2026-04-30
+90054,80054,4000.0,0.0,4000.0,Private Insurance,Max Bupa Health,TPA Direct Settlement,Settled,2026-01-28
+90055,80055,600.0,0.0,600.0,Self-Pay,,UPI,Settled,2026-02-23
+90056,80056,1500.0,200.0,1300.0,Private Insurance,ICICI Lombard,TPA Direct Settlement,Pending TPA Claim,2026-02-13
+90057,80057,800.0,0.0,800.0,Private Insurance,Care Health Insurance,TPA Direct Settlement,Settled,2026-06-07
+90058,80058,1550.0,0.0,1550.0,Private Insurance,Max Bupa Health,TPA Direct Settlement,Pending TPA Claim,2026-01-21
+90059,80059,1000.0,0.0,1000.0,Government Scheme,ECHS,TPA Direct Settlement,Pending TPA Claim,2026-03-25
+90060,80060,600.0,0.0,600.0,Self-Pay,,Credit Card,Settled,2026-02-20
+90061,80061,1500.0,0.0,1500.0,Self-Pay,,Cash,Settled,2026-04-19
+90062,80062,1550.0,0.0,1550.0,Self-Pay,,UPI,Settled,2026-03-25
+90063,80063,1800.0,0.0,1800.0,Self-Pay,,Cash,Settled,2026-02-12
+90064,80064,1050.0,0.0,1050.0,Self-Pay,,Debit Card,Settled,2026-01-26
+90065,80065,1200.0,0.0,1200.0,Self-Pay,,UPI,Settled,2026-03-10
+90066,80066,800.0,0.0,800.0,Self-Pay,,Cash,Settled,2026-01-16
+90067,80067,1800.0,0.0,1800.0,Government Scheme,ECHS,TPA Direct Settlement,Settled,2026-02-17
+90068,80068,800.0,0.0,800.0,Private Insurance,Care Health Insurance,TPA Direct Settlement,Pending TPA Claim,2026-05-23
+90069,80069,1800.0,0.0,1800.0,Self-Pay,,UPI,Settled,2026-01-25
+90070,80070,2000.0,0.0,2000.0,Private Insurance,ICICI Lombard,TPA Direct Settlement,Pending TPA Claim,2026-05-04
+90071,80071,2000.0,200.0,1800.0,Self-Pay,,Debit Card,Settled,2026-02-06
+90072,80072,1400.0,0.0,1400.0,Self-Pay,,Debit Card,Settled,2026-05-25
+90073,80073,1700.0,0.0,1700.0,Private Insurance,ICICI Lombard,TPA Direct Settlement,Settled,2026-04-14
+90074,80074,750.0,0.0,750.0,Private Insurance,Star Health Insurance,TPA Direct Settlement,Settled,2026-02-23
+90075,80075,1200.0,0.0,1200.0,Self-Pay,,Credit Card,Settled,2026-05-21
+90076,80076,1550.0,0.0,1550.0,Government Scheme,Ayushman Bharat (PM-JAY),TPA Direct Settlement,Settled,2026-06-24
+90077,80077,1500.0,0.0,1500.0,Government Scheme,ECHS,TPA Direct Settlement,Settled,2026-03-26
+90078,80078,1900.0,0.0,1900.0,Private Insurance,Care Health Insurance,TPA Direct Settlement,Pending TPA Claim,2026-02-02
+90079,80079,2400.0,0.0,2400.0,Private Insurance,Star Health Insurance,TPA Direct Settlement,Settled,2026-02-03
+90080,80080,1550.0,0.0,1550.0,Private Insurance,Care Health Insurance,TPA Direct Settlement,Settled,2026-05-13
+90081,80081,2400.0,0.0,2400.0,Self-Pay,,Credit Card,Settled,2026-05-10
+90082,80082,1550.0,200.0,1350.0,Self-Pay,,Cash,Settled,2026-05-16
+90083,80083,4000.0,200.0,3800.0,Self-Pay,,Debit Card,Settled,2026-02-05
+90084,80084,1200.0,0.0,1200.0,Private Insurance,Max Bupa Health,TPA Direct Settlement,Pending TPA Claim,2026-05-07
+90085,80085,1000.0,0.0,1000.0,Private Insurance,ICICI Lombard,TPA Direct Settlement,Pending TPA Claim,2026-04-24
+90086,80086,3200.0,0.0,3200.0,Self-Pay,,Cash,Settled,2026-06-25
+90087,80087,1400.0,0.0,1400.0,Government Scheme,ECHS,TPA Direct Settlement,Settled,2026-04-23
+90088,80088,5400.0,200.0,5200.0,Government Scheme,ECHS,TPA Direct Settlement,Pending TPA Claim,2026-02-17
+90089,80089,5400.0,0.0,5400.0,Private Insurance,Max Bupa Health,TPA Direct Settlement,Pending TPA Claim,2026-04-09
+90090,80090,700.0,0.0,700.0,Private Insurance,Star Health Insurance,TPA Direct Settlement,Pending TPA Claim,2026-07-09
+90091,80091,5400.0,0.0,5400.0,Government Scheme,Ayushman Bharat (PM-JAY),TPA Direct Settlement,Settled,2026-05-24
+90092,80092,1800.0,0.0,1800.0,Self-Pay,,Cash,Settled,2026-06-23
+90093,80093,700.0,0.0,700.0,Private Insurance,Care Health Insurance,TPA Direct Settlement,Pending TPA Claim,2026-04-18
+90094,80094,1100.0,0.0,1100.0,Self-Pay,,Cash,Settled,2026-05-13
+90095,80095,2700.0,0.0,2700.0,Private Insurance,Care Health Insurance,TPA Direct Settlement,Settled,2026-02-25
+90096,80096,1300.0,0.0,1300.0,Self-Pay,,Cash,Settled,2026-06-28
+90097,80097,3900.0,0.0,3900.0,Government Scheme,Ayushman Bharat (PM-JAY),TPA Direct Settlement,Settled,2026-05-27
+90098,80098,1500.0,0.0,1500.0,Government Scheme,Ayushman Bharat (PM-JAY),TPA Direct Settlement,Pending TPA Claim,2026-05-10
+90099,80099,2300.0,0.0,2300.0,Self-Pay,,Cash,Settled,2026-05-10
+90100,80100,1500.0,0.0,1500.0,Private Insurance,Care Health Insurance,TPA Direct Settlement,Settled,2026-04-20
+90101,80101,1800.0,200.0,1600.0,Government Scheme,Ayushman Bharat (PM-JAY),TPA Direct Settlement,Settled,2026-01-24
+90102,80102,1200.0,0.0,1200.0,Private Insurance,Care Health Insurance,TPA Direct Settlement,Settled,2026-07-14
+90103,80103,1700.0,0.0,1700.0,Government Scheme,Ayushman Bharat (PM-JAY),TPA Direct Settlement,Settled,2026-05-30
+90104,80104,3100.0,0.0,3100.0,Private Insurance,Care Health Insurance,TPA Direct Settlement,Pending TPA Claim,2026-01-27
+90105,80105,750.0,0.0,750.0,Self-Pay,,UPI,Settled,2026-05-22
+90106,80106,1050.0,200.0,850.0,Self-Pay,,UPI,Settled,2026-02-20
+90107,80107,750.0,0.0,750.0,Self-Pay,,Cash,Settled,2026-03-03
+90108,80108,1700.0,0.0,1700.0,Private Insurance,Max Bupa Health,TPA Direct Settlement,Settled,2026-05-29
+90109,80109,2600.0,0.0,2600.0,Self-Pay,,UPI,Settled,2026-01-26
+90110,80110,2000.0,0.0,2000.0,Private Insurance,Star Health Insurance,TPA Direct Settlement,Pending TPA Claim,2026-02-01
+90111,80111,1500.0,0.0,1500.0,Private Insurance,ICICI Lombard,TPA Direct Settlement,Pending TPA Claim,2026-06-12
+90112,80112,1800.0,0.0,1800.0,Private Insurance,Care Health Insurance,TPA Direct Settlement,Settled,2026-04-11
+90113,80113,1800.0,0.0,1800.0,Government Scheme,Ayushman Bharat (PM-JAY),TPA Direct Settlement,Pending TPA Claim,2026-01-26
+90114,80114,5400.0,200.0,5200.0,Government Scheme,Ayushman Bharat (PM-JAY),TPA Direct Settlement,Pending TPA Claim,2026-04-26
+90115,80115,1400.0,0.0,1400.0,Self-Pay,,Debit Card,Settled,2026-03-29
+90116,80116,700.0,0.0,700.0,Government Scheme,Ayushman Bharat (PM-JAY),TPA Direct Settlement,Settled,2026-04-11
+90117,80117,1500.0,0.0,1500.0,Private Insurance,Max Bupa Health,TPA Direct Settlement,Pending TPA Claim,2026-02-05
+90118,80118,2700.0,0.0,2700.0,Private Insurance,Star Health Insurance,TPA Direct Settlement,Pending TPA Claim,2026-03-02
+90119,80119,1000.0,0.0,1000.0,Government Scheme,CGHS,TPA Direct Settlement,Pending TPA Claim,2026-03-31
+90120,80120,700.0,0.0,700.0,Self-Pay,,Credit Card,Settled,2026-04-14
+90121,80121,600.0,0.0,600.0,Self-Pay,,Credit Card,Settled,2026-03-26
+90122,80122,1200.0,0.0,1200.0,Government Scheme,Ayushman Bharat (PM-JAY),TPA Direct Settlement,Settled,2026-04-18
+90123,80123,700.0,0.0,700.0,Self-Pay,,Credit Card,Settled,2026-02-20
+90124,80124,6300.0,200.0,6100.0,Government Scheme,Ayushman Bharat (PM-JAY),TPA Direct Settlement,Settled,2026-03-16
+90125,80125,1550.0,0.0,1550.0,Government Scheme,Ayushman Bharat (PM-JAY),TPA Direct Settlement,Settled,2026-01-21
+90126,80126,1700.0,200.0,1500.0,Self-Pay,,Credit Card,Settled,2026-03-23
+90127,80127,2300.0,0.0,2300.0,Government Scheme,CGHS,TPA Direct Settlement,Settled,2026-03-29
+90128,80128,600.0,0.0,600.0,Self-Pay,,Cash,Settled,2026-01-31
+90129,80129,3100.0,0.0,3100.0,Private Insurance,ICICI Lombard,TPA Direct Settlement,Settled,2026-07-13
+90130,80130,2700.0,0.0,2700.0,Private Insurance,Max Bupa Health,TPA Direct Settlement,Settled,2026-05-17
+90131,80131,1800.0,0.0,1800.0,Government Scheme,CGHS,TPA Direct Settlement,Settled,2026-02-16
+90132,80132,6000.0,0.0,6000.0,Self-Pay,,UPI,Settled,2026-02-16
+90133,80133,1400.0,0.0,1400.0,Private Insurance,ICICI Lombard,TPA Direct Settlement,Pending TPA Claim,2026-02-17
+90134,80134,5600.0,0.0,5600.0,Private Insurance,Max Bupa Health,TPA Direct Settlement,Settled,2026-06-21
+90135,80135,1550.0,0.0,1550.0,Private Insurance,ICICI Lombard,TPA Direct Settlement,Settled,2026-02-27
+90136,80136,1300.0,0.0,1300.0,Private Insurance,Care Health Insurance,TPA Direct Settlement,Settled,2026-06-18
+90137,80137,1600.0,0.0,1600.0,Self-Pay,,Credit Card,Settled,2026-06-10
+90138,80138,2000.0,0.0,2000.0,Self-Pay,,Debit Card,Settled,2026-05-22
+90139,80139,4000.0,200.0,3800.0,Self-Pay,,Cash,Settled,2026-02-24
+90140,80140,2700.0,0.0,2700.0,Private Insurance,Star Health Insurance,TPA Direct Settlement,Pending TPA Claim,2026-02-20
+90141,80141,5400.0,0.0,5400.0,Self-Pay,,UPI,Settled,2026-04-13
+90142,80142,600.0,0.0,600.0,Self-Pay,,Cash,Settled,2026-04-06
+90143,80143,3300.0,0.0,3300.0,Government Scheme,CGHS,TPA Direct Settlement,Settled,2026-05-10
+90144,80144,2000.0,0.0,2000.0,Self-Pay,,Debit Card,Settled,2026-06-21
+90145,80145,700.0,0.0,700.0,Government Scheme,CGHS,TPA Direct Settlement,Settled,2026-02-11
+90146,80146,1100.0,0.0,1100.0,Private Insurance,Star Health Insurance,TPA Direct Settlement,Settled,2026-04-17
+90147,80147,1500.0,200.0,1300.0,Government Scheme,ECHS,TPA Direct Settlement,Settled,2026-06-23
+90148,80148,1000.0,0.0,1000.0,Self-Pay,,Cash,Settled,2026-04-20
+90149,80149,2400.0,0.0,2400.0,Self-Pay,,Debit Card,Settled,2026-04-10
+90150,80150,2300.0,0.0,2300.0,Private Insurance,Care Health Insurance,TPA Direct Settlement,Settled,2026-02-19
+90151,80151,900.0,0.0,900.0,Government Scheme,Ayushman Bharat (PM-JAY),TPA Direct Settlement,Settled,2026-04-01
+90152,80152,2200.0,0.0,2200.0,Private Insurance,Star Health Insurance,TPA Direct Settlement,Settled,2026-05-16
+90153,80153,1400.0,0.0,1400.0,Self-Pay,,Credit Card,Settled,2026-06-13
+90154,80154,1550.0,200.0,1350.0,Private Insurance,Care Health Insurance,TPA Direct Settlement,Settled,2026-01-28
+90155,80155,1800.0,0.0,1800.0,Private Insurance,ICICI Lombard,TPA Direct Settlement,Pending TPA Claim,2026-05-23
+90156,80156,1000.0,0.0,1000.0,Private Insurance,Star Health Insurance,TPA Direct Settlement,Pending TPA Claim,2026-02-19
+90157,80157,600.0,0.0,600.0,Private Insurance,Max Bupa Health,TPA Direct Settlement,Pending TPA Claim,2026-07-03
+90158,80158,1400.0,0.0,1400.0,Government Scheme,Ayushman Bharat (PM-JAY),TPA Direct Settlement,Settled,2026-02-28
+90159,80159,900.0,0.0,900.0,Private Insurance,Care Health Insurance,TPA Direct Settlement,Settled,2026-06-20
+90160,80160,5600.0,0.0,5600.0,Self-Pay,,Cash,Settled,2026-06-06
+90161,80161,600.0,0.0,600.0,Private Insurance,ICICI Lombard,TPA Direct Settlement,Settled,2026-07-14
+90162,80162,2700.0,0.0,2700.0,Self-Pay,,Credit Card,Settled,2026-04-13
+90163,80163,1100.0,0.0,1100.0,Self-Pay,,Cash,Settled,2026-02-04
+90164,80164,1250.0,0.0,1250.0,Self-Pay,,Credit Card,Settled,2026-03-10
+90165,80165,800.0,0.0,800.0,Self-Pay,,UPI,Settled,2026-05-30
+90166,80166,1800.0,0.0,1800.0,Self-Pay,,UPI,Settled,2026-05-17
+90167,80167,1800.0,0.0,1800.0,Self-Pay,,Credit Card,Settled,2026-02-06
+90168,80168,1400.0,0.0,1400.0,Private Insurance,ICICI Lombard,TPA Direct Settlement,Settled,2026-01-24
+90169,80169,1800.0,200.0,1600.0,Government Scheme,Ayushman Bharat (PM-JAY),TPA Direct Settlement,Settled,2026-01-24
+90170,80170,1400.0,0.0,1400.0,Self-Pay,,UPI,Settled,2026-03-30
+90171,80171,1400.0,0.0,1400.0,Government Scheme,ECHS,TPA Direct Settlement,Pending TPA Claim,2026-02-12
+90172,80172,5550.0,0.0,5550.0,Private Insurance,Max Bupa Health,TPA Direct Settlement,Settled,2026-02-28
+90173,80173,2700.0,0.0,2700.0,Self-Pay,,Cash,Settled,2026-05-04
+90174,80174,1500.0,0.0,1500.0,Self-Pay,,Cash,Settled,2026-02-19
+90175,80175,2000.0,0.0,2000.0,Private Insurance,ICICI Lombard,TPA Direct Settlement,Settled,2026-05-09
+90176,80176,900.0,0.0,900.0,Private Insurance,Care Health Insurance,TPA Direct Settlement,Pending TPA Claim,2026-03-31
+90177,80177,3300.0,0.0,3300.0,Private Insurance,Care Health Insurance,TPA Direct Settlement,Pending TPA Claim,2026-02-23
+90178,80178,1400.0,200.0,1200.0,Self-Pay,,UPI,Settled,2026-06-01
+90179,80179,1100.0,0.0,1100.0,Self-Pay,,Cash,Settled,2026-02-04
+90180,80180,1500.0,0.0,1500.0,Self-Pay,,UPI,Settled,2026-01-30
+90181,80181,1600.0,200.0,1400.0,Self-Pay,,UPI,Settled,2026-02-26
+90182,80182,6300.0,0.0,6300.0,Self-Pay,,Debit Card,Settled,2026-06-13
+90183,80183,2300.0,0.0,2300.0,Self-Pay,,UPI,Settled,2026-02-17
+90184,80184,5550.0,0.0,5550.0,Private Insurance,ICICI Lombard,TPA Direct Settlement,Pending TPA Claim,2026-07-06
+90185,80185,1500.0,0.0,1500.0,Government Scheme,Ayushman Bharat (PM-JAY),TPA Direct Settlement,Settled,2026-03-11
+90186,80186,2700.0,200.0,2500.0,Self-Pay,,UPI,Settled,2026-06-02
+90187,80187,1700.0,0.0,1700.0,Government Scheme,CGHS,TPA Direct Settlement,Settled,2026-03-02
+90188,80188,750.0,0.0,750.0,Self-Pay,,Cash,Settled,2026-05-02
+90189,80189,5400.0,200.0,5200.0,Private Insurance,Max Bupa Health,TPA Direct Settlement,Pending TPA Claim,2026-04-25
+90190,80190,1600.0,0.0,1600.0,Self-Pay,,Cash,Settled,2026-01-20
+90191,80191,3200.0,0.0,3200.0,Private Insurance,Star Health Insurance,TPA Direct Settlement,Pending TPA Claim,2026-05-31
+90192,80192,3200.0,0.0,3200.0,Government Scheme,ECHS,TPA Direct Settlement,Pending TPA Claim,2026-03-17
+90193,80193,1250.0,200.0,1050.0,Private Insurance,Max Bupa Health,TPA Direct Settlement,Settled,2026-07-06
+90194,80194,1500.0,0.0,1500.0,Self-Pay,,Debit Card,Settled,2026-03-15
+90195,80195,750.0,0.0,750.0,Private Insurance,Care Health Insurance,TPA Direct Settlement,Settled,2026-03-16
+90196,80196,1500.0,0.0,1500.0,Self-Pay,,Credit Card,Settled,2026-05-28
+90197,80197,1600.0,0.0,1600.0,Government Scheme,Ayushman Bharat (PM-JAY),TPA Direct Settlement,Settled,2026-02-28
+90198,80198,700.0,0.0,700.0,Private Insurance,ICICI Lombard,TPA Direct Settlement,Settled,2026-07-12
+90199,80199,5400.0,0.0,5400.0,Self-Pay,,UPI,Settled,2026-04-21
+90200,80200,2200.0,0.0,2200.0,Private Insurance,Max Bupa Health,TPA Direct Settlement,Pending TPA Claim,2026-04-01
+90201,80201,1800.0,0.0,1800.0,Private Insurance,Care Health Insurance,TPA Direct Settlement,Pending TPA Claim,2026-04-30
+90202,80202,1700.0,0.0,1700.0,Self-Pay,,UPI,Settled,2026-03-21
+90203,80203,1600.0,0.0,1600.0,Private Insurance,ICICI Lombard,TPA Direct Settlement,Pending TPA Claim,2026-04-02
+90204,80204,1300.0,200.0,1100.0,Self-Pay,,Credit Card,Settled,2026-02-14
+90205,80205,1400.0,0.0,1400.0,Private Insurance,Max Bupa Health,TPA Direct Settlement,Settled,2026-06-18
+90206,80206,5600.0,0.0,5600.0,Government Scheme,CGHS,TPA Direct Settlement,Settled,2026-06-05
+90207,80207,1500.0,0.0,1500.0,Private Insurance,Care Health Insurance,TPA Direct Settlement,Settled,2026-04-03
+90208,80208,1700.0,0.0,1700.0,Private Insurance,ICICI Lombard,TPA Direct Settlement,Pending TPA Claim,2026-04-06
+90209,80209,1600.0,0.0,1600.0,Private Insurance,ICICI Lombard,TPA Direct Settlement,Settled,2026-03-21
+90210,80210,700.0,0.0,700.0,Self-Pay,,Cash,Settled,2026-06-02
+90211,80211,1400.0,0.0,1400.0,Private Insurance,Star Health Insurance,TPA Direct Settlement,Pending TPA Claim,2026-01-23
+90212,80212,700.0,0.0,700.0,Self-Pay,,Cash,Settled,2026-04-30
+90213,80213,5600.0,0.0,5600.0,Private Insurance,Star Health Insurance,TPA Direct Settlement,Settled,2026-01-17
+90214,80214,600.0,0.0,600.0,Self-Pay,,Debit Card,Settled,2026-07-04
+90215,80215,1500.0,0.0,1500.0,Self-Pay,,Debit Card,Settled,2026-03-26
+90216,80216,5600.0,200.0,5400.0,Private Insurance,Max Bupa Health,TPA Direct Settlement,Settled,2026-03-20
+90217,80217,2000.0,0.0,2000.0,Self-Pay,,Credit Card,Settled,2026-05-12
+90218,80218,3300.0,0.0,3300.0,Private Insurance,Star Health Insurance,TPA Direct Settlement,Pending TPA Claim,2026-07-01
+90219,80219,3700.0,0.0,3700.0,Self-Pay,,UPI,Settled,2026-04-21
+90220,80220,750.0,0.0,750.0,Self-Pay,,Debit Card,Settled,2026-02-05
+90221,80221,1250.0,0.0,1250.0,Private Insurance,Max Bupa Health,TPA Direct Settlement,Pending TPA Claim,2026-04-09
+90222,80222,6200.0,0.0,6200.0,Self-Pay,,UPI,Settled,2026-03-10
+90223,80223,750.0,0.0,750.0,Self-Pay,,Cash,Settled,2026-05-16
+90224,80224,1500.0,0.0,1500.0,Private Insurance,Star Health Insurance,TPA Direct Settlement,Pending TPA Claim,2026-06-08
+90225,80225,1400.0,0.0,1400.0,Self-Pay,,UPI,Settled,2026-01-19
+90226,80226,1800.0,0.0,1800.0,Government Scheme,CGHS,TPA Direct Settlement,Pending TPA Claim,2026-04-26
+90227,80227,1300.0,0.0,1300.0,Self-Pay,,UPI,Settled,2026-04-24
+90228,80228,900.0,0.0,900.0,Self-Pay,,Debit Card,Settled,2026-07-10
+90229,80229,1200.0,0.0,1200.0,Private Insurance,Star Health Insurance,TPA Direct Settlement,Settled,2026-02-09
+90230,80230,1400.0,0.0,1400.0,Self-Pay,,Debit Card,Settled,2026-06-16
+90231,80231,2600.0,0.0,2600.0,Self-Pay,,UPI,Settled,2026-06-12
+90232,80232,6300.0,0.0,6300.0,Self-Pay,,UPI,Settled,2026-06-20
+90233,80233,3700.0,0.0,3700.0,Self-Pay,,Credit Card,Settled,2026-04-10
+90234,80234,3700.0,0.0,3700.0,Government Scheme,CGHS,TPA Direct Settlement,Pending TPA Claim,2026-03-18
+90235,80235,5400.0,0.0,5400.0,Self-Pay,,Debit Card,Settled,2026-05-06
+90236,80236,6200.0,0.0,6200.0,Private Insurance,Care Health Insurance,TPA Direct Settlement,Pending TPA Claim,2026-05-04
+90237,80237,1200.0,0.0,1200.0,Government Scheme,Ayushman Bharat (PM-JAY),TPA Direct Settlement,Pending TPA Claim,2026-04-02
+90238,80238,1700.0,0.0,1700.0,Self-Pay,,Debit Card,Settled,2026-03-04
+90239,80239,2600.0,0.0,2600.0,Government Scheme,Ayushman Bharat (PM-JAY),TPA Direct Settlement,Pending TPA Claim,2026-05-10
+90240,80240,3900.0,0.0,3900.0,Self-Pay,,UPI,Settled,2026-05-12
+90241,80241,2200.0,0.0,2200.0,Government Scheme,Ayushman Bharat (PM-JAY),TPA Direct Settlement,Settled,2026-04-11
+90242,80242,750.0,0.0,750.0,Self-Pay,,Debit Card,Settled,2026-06-06
+90243,80243,2700.0,0.0,2700.0,Private Insurance,Star Health Insurance,TPA Direct Settlement,Pending TPA Claim,2026-03-10
+90244,80244,3700.0,0.0,3700.0,Private Insurance,Star Health Insurance,TPA Direct Settlement,Settled,2026-05-16
+90245,80245,1200.0,0.0,1200.0,Self-Pay,,Debit Card,Settled,2026-02-11
+90246,80246,1400.0,200.0,1200.0,Private Insurance,Max Bupa Health,TPA Direct Settlement,Settled,2026-05-22
+90247,80247,1500.0,0.0,1500.0,Private Insurance,ICICI Lombard,TPA Direct Settlement,Pending TPA Claim,2026-02-22
+90248,80248,1800.0,0.0,1800.0,Self-Pay,,Credit Card,Settled,2026-02-21
+90249,80249,2300.0,0.0,2300.0,Self-Pay,,UPI,Settled,2026-04-02
+90250,80250,1000.0,0.0,1000.0,Private Insurance,ICICI Lombard,TPA Direct Settlement,Settled,2026-04-05
+90251,80251,1700.0,0.0,1700.0,Private Insurance,Care Health Insurance,TPA Direct Settlement,Pending TPA Claim,2026-05-06
+90252,80252,800.0,0.0,800.0,Government Scheme,Ayushman Bharat (PM-JAY),TPA Direct Settlement,Settled,2026-04-30
+90253,80253,2200.0,0.0,2200.0,Private Insurance,Max Bupa Health,TPA Direct Settlement,Settled,2026-02-19
+90254,80254,1800.0,0.0,1800.0,Government Scheme,CGHS,TPA Direct Settlement,Settled,2026-04-03
+90255,80255,800.0,0.0,800.0,Private Insurance,ICICI Lombard,TPA Direct Settlement,Settled,2026-05-09
+90256,80256,3900.0,0.0,3900.0,Self-Pay,,Cash,Settled,2026-03-06
+90257,80257,2200.0,200.0,2000.0,Self-Pay,,UPI,Settled,2026-06-19
+90258,80258,800.0,0.0,800.0,Private Insurance,Care Health Insurance,TPA Direct Settlement,Settled,2026-02-02
+90259,80259,1800.0,0.0,1800.0,Private Insurance,Max Bupa Health,TPA Direct Settlement,Pending TPA Claim,2026-05-23
+90260,80260,1100.0,0.0,1100.0,Self-Pay,,Credit Card,Settled,2026-04-30
+90261,80261,750.0,0.0,750.0,Self-Pay,,UPI,Settled,2026-06-15
+90262,80262,5500.0,200.0,5300.0,Government Scheme,ECHS,TPA Direct Settlement,Pending TPA Claim,2026-02-17
+90263,80263,800.0,0.0,800.0,Private Insurance,Care Health Insurance,TPA Direct Settlement,Settled,2026-03-22
+90264,80264,2200.0,0.0,2200.0,Self-Pay,,Debit Card,Settled,2026-01-30
+90265,80265,1800.0,0.0,1800.0,Self-Pay,,Cash,Settled,2026-06-27
+90266,80266,1000.0,0.0,1000.0,Self-Pay,,Debit Card,Settled,2026-07-08
+90267,80267,1600.0,0.0,1600.0,Self-Pay,,UPI,Settled,2026-03-21
+90268,80268,1050.0,200.0,850.0,Self-Pay,,UPI,Settled,2026-02-20
+90269,80269,1700.0,0.0,1700.0,Self-Pay,,Cash,Settled,2026-07-09
+90270,80270,1700.0,0.0,1700.0,Private Insurance,ICICI Lombard,TPA Direct Settlement,Settled,2026-04-21
+90271,80271,5500.0,0.0,5500.0,Self-Pay,,Credit Card,Settled,2026-04-11
+90272,80272,750.0,0.0,750.0,Government Scheme,ECHS,TPA Direct Settlement,Settled,2026-05-08
+90273,80273,2200.0,0.0,2200.0,Government Scheme,CGHS,TPA Direct Settlement,Settled,2026-04-10
+90274,80274,700.0,0.0,700.0,Self-Pay,,Credit Card,Settled,2026-06-20
+90275,80275,1400.0,0.0,1400.0,Private Insurance,Care Health Insurance,TPA Direct Settlement,Pending TPA Claim,2026-07-07
+90276,80276,1100.0,0.0,1100.0,Private Insurance,Max Bupa Health,TPA Direct Settlement,Pending TPA Claim,2026-03-09
+90277,80277,1900.0,0.0,1900.0,Government Scheme,CGHS,TPA Direct Settlement,Settled,2026-02-26
+90278,80278,1200.0,0.0,1200.0,Self-Pay,,Credit Card,Settled,2026-04-20
+90279,80279,2000.0,0.0,2000.0,Private Insurance,Star Health Insurance,TPA Direct Settlement,Settled,2026-04-19
+90280,80280,2200.0,0.0,2200.0,Private Insurance,ICICI Lombard,TPA Direct Settlement,Settled,2026-02-07

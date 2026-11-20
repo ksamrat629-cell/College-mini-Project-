@@ -1,0 +1,25 @@
+doctor_id,doctor_name,department_id,specialty,scheduled_hours_per_day,clinic_room_no,experience_years
+101,Dr. Deepak Choudhury,1,Attending Cardiology,8.0,OPD-101,11
+102,Dr. Neha Singh,1,Senior Consultant Cardiology,8.0,OPD-102,24
+103,Dr. Suresh Malhotra,1,Senior Consultant Cardiology,6.0,OPD-103,19
+104,Dr. Alok Kapoor,2,Attending Orthopedics,8.0,OPD-201,15
+105,Dr. Radha Saxena,2,Attending Orthopedics,8.0,OPD-202,12
+106,Dr. Rajesh Patel,2,Senior Consultant Orthopedics,6.0,OPD-203,25
+107,Dr. Gaurav Singh,3,Attending Pediatrics,8.0,OPD-301,11
+108,Dr. Sunita Malhotra,3,Senior Consultant Pediatrics,8.0,OPD-302,30
+109,Dr. Sanjay Nair,3,Senior Consultant Pediatrics,6.0,OPD-303,23
+110,Dr. Vikram Saxena,4,Senior Consultant General Medicine,8.0,OPD-401,27
+111,Dr. Shweta Patel,4,Attending General Medicine,8.0,OPD-402,15
+112,Dr. Manoj Gupta,4,Attending General Medicine,6.0,OPD-403,15
+113,Dr. Deepak Malhotra,5,Senior Consultant Oncology,8.0,OPD-501,28
+114,Dr. Neha Nair,5,Senior Consultant Oncology,8.0,OPD-502,25
+115,Dr. Suresh Mishra,5,Attending Oncology,6.0,OPD-503,8
+116,Dr. Alok Patel,6,Attending Neurology,8.0,OPD-601,12
+117,Dr. Radha Gupta,6,Senior Consultant Neurology,8.0,OPD-602,28
+118,Dr. Rajesh Iyer,6,Attending Neurology,6.0,OPD-603,7
+119,Dr. Gaurav Nair,7,Senior Consultant Dermatology,8.0,OPD-701,26
+120,Dr. Sunita Mishra,7,Senior Consultant Dermatology,8.0,OPD-702,25
+121,Dr. Sanjay Verma,7,Attending Dermatology,6.0,OPD-703,6
+122,Dr. Vikram Gupta,8,Senior Consultant ENT (Otolaryngology),8.0,OPD-801,28
+123,Dr. Shweta Iyer,8,Attending ENT (Otolaryngology),8.0,OPD-802,16
+124,Dr. Manoj Reddy,8,Attending ENT (Otolaryngology),6.0,OPD-803,10

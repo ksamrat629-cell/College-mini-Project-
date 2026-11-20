@@ -1,0 +1,37 @@
+
+========================================================================
+STEP 10 SYNTHETIC DATASET GENERATION VALIDATION REPORT
+========================================================================
+Database File: C:\Users\ksamr\OneDrive\Desktop\HealthCare Patient visit analysis\data\app.db
+Random Seed: 42 (100% Deterministic Reproducibility)
+
+1. TABLE ROW COUNTS:
+   - departments:          8 rows (Expected: 8) -> PASSED
+   - doctors:              24 rows (Expected: 24) -> PASSED
+   - patients:             200 rows (Expected: 200) -> PASSED
+   - appointments:         320 rows (Expected: 320) -> PASSED
+   - visits (Fact Table):  280 rows (Expected: 280) -> PASSED (Meets 150+ target)
+   - billing:              280 rows (Expected: 280) -> PASSED
+   - v_patient_visit_analytics View: 280 rows, 44 columns -> PASSED (Meets 30-40+ column target)
+
+2. FOREIGN KEY REFERENTIAL INTEGRITY AUDIT:
+   - Violations detected: 0
+   - Verdict: 100% Referential Integrity Verified across all foreign keys!
+
+3. INJECTED REALISTIC PATTERNS:
+   - Pattern 1: Peak Arrival Congestion (Morning 09:00-11:30 & Evening 16:00-18:00) in General Medicine, Pediatrics, and Orthopedics.
+   - Pattern 2: Appointment No-Show Risk Correlation (Lead time >10 days via Call Center yields ~34% no-show vs ~8% for Same-day/Portal).
+   - Pattern 3: Departmental Wait-Time Disparity (Cardiology & Orthopedics average >38 mins wait time vs <22 mins for ENT/Dermatology).
+   - Pattern 4: CSAT vs. Wait-Time Inverse Correlation (Pearson r ~ -0.68, confirming longer queues drive dissatisfaction).
+   - Pattern 5: Age & Seasonal Epidemiological Trends (Pediatrics acute infections vs. Senior Type 2 Diabetes/Hypertension).
+
+4. CONTROLLED DATA-QUALITY ISSUES (For Cleaning & Testing):
+   - Missing Values: 7 unrecorded CSAT ratings (NaN), 2 patients with missing contact_city.
+   - Duplicates: 2 duplicate appointment rows injected in data/appointments.csv.
+   - Outliers & Anomalies: 2 extreme wait time outliers (165m, 172m) and 1 timestamp check-in anomaly (consultation_start < check_in) for testing RULE-01.
+
+5. OUTPUT DELIVERABLES CREATED:
+   - SQLite DB:      data/app.db (ACID compliant with PRAGMA foreign_keys ON)
+   - Excel Workbook: data/healthcare_patient_visit_data.xlsx (7 sheets)
+   - Raw CSVs:       data/departments.csv, doctors.csv, patients.csv, appointments.csv, visits.csv, billing.csv
+========================================================================

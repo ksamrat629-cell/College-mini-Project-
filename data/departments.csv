@@ -1,0 +1,9 @@
+department_id,department_name,department_code,building_floor,head_of_department,standard_consultation_fee
+1,Cardiology,CARD,"1st Floor, Wing A",Dr. Arvind Subramanian,1200.0
+2,Orthopedics,ORTH,"Ground Floor, Wing B",Dr. Meenakshi Sundaram,1000.0
+3,Pediatrics,PED,"2nd Floor, Wing C",Dr. Sunita Deshmukh,800.0
+4,General Medicine,GMED,"Ground Floor, Wing A",Dr. Rajeshwar Sharma,600.0
+5,Oncology,ONCO,"3rd Floor, Wing D",Dr. Vikramaditya Sen,1500.0
+6,Neurology,NEUR,"2nd Floor, Wing B",Dr. Ananya Mukherjee,1400.0
+7,Dermatology,DERM,"1st Floor, Wing C",Dr. Pooja Kulkarni,750.0
+8,ENT (Otolaryngology),ENTC,"1st Floor, Wing D",Dr. Rakesh Singhania,700.0
