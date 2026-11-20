@@ -13,7 +13,7 @@ import plotly.graph_objects as go
 from src.data_loader import load_analytics_view, load_all_tables
 from src.data_cleaner import clean_analytics_data
 from src.analytics import compute_revenue_payer_mix, compute_no_show_matrix, simulate_no_show_recovery
-from src.ui import render_tailwind_header, render_kpi_grid, render_insight_box
+from src.ui import render_tailwind_header, render_kpi_grid, render_insight_box, apply_plotly_theme
 
 st.set_page_config(page_title="Revenue & Payer Mix | MetroCare", page_icon="💰", layout="wide")
 
@@ -98,10 +98,9 @@ with col1:
             hole=0.45,
             color_discrete_sequence=["#2B6CB0", "#10B981", "#F59E0B", "#8B5CF6"]
         )
+        apply_plotly_theme(fig_donut, height=370)
         fig_donut.update_layout(
-            legend=dict(orientation="h", yanchor="bottom", y=-0.2, xanchor="center", x=0.5),
-            margin=dict(l=20, r=20, t=30, b=30),
-            height=370
+            legend=dict(orientation="h", yanchor="bottom", y=-0.2, xanchor="center", x=0.5)
         )
         st.plotly_chart(fig_donut, use_container_width=True)
     else:
@@ -121,11 +120,8 @@ with col2:
         color_continuous_scale="Teal",
         labels={"net_billed_amount": "Net Realized Revenue (₹)", "department_name": "Department"}
     )
-    fig_bar.update_layout(
-        margin=dict(l=20, r=20, t=30, b=20),
-        height=370,
-        showlegend=False
-    )
+    apply_plotly_theme(fig_bar, height=370)
+    fig_bar.update_layout(showlegend=False)
     st.plotly_chart(fig_bar, use_container_width=True)
 
 # Interactive Capacity Recovery Simulator

@@ -13,7 +13,7 @@ import plotly.graph_objects as go
 from src.data_loader import load_all_tables
 from src.analytics import compute_no_show_matrix
 from src.stats import calculate_no_show_chi2
-from src.ui import render_tailwind_header, render_kpi_grid, render_insight_box
+from src.ui import render_tailwind_header, render_kpi_grid, render_insight_box, apply_plotly_theme
 
 st.set_page_config(page_title="No-Show Analytics | MetroCare", page_icon="📅", layout="wide")
 
@@ -118,10 +118,7 @@ with col1:
         text_auto=True,
         aspect="auto"
     )
-    fig_heat.update_layout(
-        margin=dict(l=20, r=20, t=30, b=20),
-        height=380
-    )
+    apply_plotly_theme(fig_heat, height=380)
     st.plotly_chart(fig_heat, use_container_width=True)
 
 with col2:
@@ -140,10 +137,9 @@ with col2:
             "Cancelled": "#F59E0B"
         }
     )
+    apply_plotly_theme(fig_donut, height=380)
     fig_donut.update_layout(
-        legend=dict(orientation="h", yanchor="bottom", y=-0.15, xanchor="center", x=0.5),
-        margin=dict(l=20, r=20, t=30, b=20),
-        height=380
+        legend=dict(orientation="h", yanchor="bottom", y=-0.15, xanchor="center", x=0.5)
     )
     st.plotly_chart(fig_donut, use_container_width=True)
 

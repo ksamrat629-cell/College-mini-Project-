@@ -13,7 +13,7 @@ import plotly.graph_objects as go
 from src.data_loader import load_analytics_view
 from src.data_cleaner import clean_analytics_data
 from src.analytics import compute_readmission_rate
-from src.ui import render_tailwind_header, render_kpi_grid, render_insight_box
+from src.ui import render_tailwind_header, render_kpi_grid, render_insight_box, apply_plotly_theme
 
 st.set_page_config(page_title="Clinical Readmissions | MetroCare", page_icon="🩺", layout="wide")
 
@@ -114,13 +114,12 @@ with col1:
             yaxis="y2"
         ))
         
+        apply_plotly_theme(fig_pareto, height=400)
         fig_pareto.update_layout(
             yaxis=dict(title="Encounter Count", side="left"),
             yaxis2=dict(title="Cumulative %", overlaying="y", side="right", range=[0, 105]),
             xaxis=dict(tickangle=-35),
-            legend=dict(orientation="h", yanchor="bottom", y=1.02, xanchor="right", x=1),
-            margin=dict(l=20, r=20, t=30, b=60),
-            height=400
+            legend=dict(orientation="h", yanchor="bottom", y=1.02, xanchor="right", x=1)
         )
         st.plotly_chart(fig_pareto, use_container_width=True)
     else:
@@ -140,10 +139,9 @@ with col2:
             barmode="stack",
             labels={"Encounters": "Monthly Encounters", "disease_category": "Disease Category", "Month": "Visit Month"}
         )
+        apply_plotly_theme(fig_area, height=400)
         fig_area.update_layout(
-            legend=dict(orientation="h", yanchor="bottom", y=-0.25, xanchor="center", x=0.5),
-            margin=dict(l=20, r=20, t=30, b=30),
-            height=400
+            legend=dict(orientation="h", yanchor="bottom", y=-0.25, xanchor="center", x=0.5)
         )
         st.plotly_chart(fig_area, use_container_width=True)
 

@@ -14,7 +14,7 @@ from src.data_loader import load_analytics_view
 from src.data_cleaner import clean_analytics_data
 from src.analytics import compute_wait_time_sla, compute_consultation_duration
 from src.stats import calculate_wait_time_anova, calculate_duration_kruskal
-from src.ui import render_tailwind_header, render_kpi_grid, render_insight_box
+from src.ui import render_tailwind_header, render_kpi_grid, render_insight_box, apply_plotly_theme
 
 st.set_page_config(page_title="Queue Dynamics | MetroCare", page_icon="⏱️", layout="wide")
 
@@ -122,12 +122,11 @@ with col1:
         annotation_position="top right"
     )
     
+    apply_plotly_theme(fig_dept, height=390)
     fig_dept.update_layout(
         xaxis=dict(title="Average Patient Wait Time (Minutes)"),
         yaxis=dict(title="Department"),
-        legend=dict(orientation="h", yanchor="bottom", y=1.02, xanchor="right", x=1),
-        margin=dict(l=20, r=20, t=30, b=20),
-        height=390
+        legend=dict(orientation="h", yanchor="bottom", y=1.02, xanchor="right", x=1)
     )
     st.plotly_chart(fig_dept, use_container_width=True)
 
@@ -141,12 +140,11 @@ with col2:
         points="outliers",
         labels={"visit_type": "Visit Type", "consultation_duration_minutes": "Consultation Duration (Mins)"}
     )
+    apply_plotly_theme(fig_box, height=390)
     fig_box.update_layout(
         xaxis=dict(title="Clinical Visit Nature"),
         yaxis=dict(title="Consultation Duration (Minutes)"),
-        showlegend=False,
-        margin=dict(l=20, r=20, t=30, b=20),
-        height=390
+        showlegend=False
     )
     st.plotly_chart(fig_box, use_container_width=True)
 

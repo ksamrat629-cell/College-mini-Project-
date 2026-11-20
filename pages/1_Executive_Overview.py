@@ -14,7 +14,7 @@ from src.data_loader import load_analytics_view
 from src.data_cleaner import clean_analytics_data
 from src.analytics import compute_department_throughput, compute_wait_time_sla
 from src.stats import calculate_csat_pearson
-from src.ui import render_tailwind_header, render_kpi_grid, render_insight_box
+from src.ui import render_tailwind_header, render_kpi_grid, render_insight_box, apply_plotly_theme
 
 st.set_page_config(page_title="Executive Overview | MetroCare", page_icon="🏥", layout="wide")
 
@@ -120,13 +120,7 @@ with col1:
         annotation_position="top right"
     )
     
-    fig_hourly.update_layout(
-        xaxis=dict(title="Hour of Day (24-Hour)", dtick=2),
-        yaxis=dict(title="Number of Patient Check-ins"),
-        legend=dict(orientation="h", yanchor="bottom", y=1.02, xanchor="right", x=1),
-        margin=dict(l=20, r=20, t=30, b=20),
-        height=380
-    )
+    apply_plotly_theme(fig_hourly, height=380)
     st.plotly_chart(fig_hourly, use_container_width=True)
 
 with col2:
@@ -143,12 +137,11 @@ with col2:
         labels={"wait_time_minutes": "Wait Time (Minutes)", "csat_score": "CSAT Score (1 to 5)", "department_name": "Department"},
         opacity=0.75
     )
+    apply_plotly_theme(fig_csat, height=380)
     fig_csat.update_layout(
         xaxis=dict(title="Patient Wait Time (Minutes)"),
         yaxis=dict(title="CSAT Score (1 to 5)", range=[0.5, 5.5]),
-        legend=dict(orientation="h", yanchor="bottom", y=-0.35, xanchor="center", x=0.5),
-        margin=dict(l=20, r=20, t=30, b=20),
-        height=380
+        legend=dict(orientation="h", yanchor="bottom", y=-0.35, xanchor="center", x=0.5)
     )
     st.plotly_chart(fig_csat, use_container_width=True)
 

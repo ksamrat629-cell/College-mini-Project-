@@ -13,7 +13,7 @@ import plotly.graph_objects as go
 from src.data_loader import load_analytics_view
 from src.data_cleaner import clean_analytics_data
 from src.analytics import compute_doctor_utilization
-from src.ui import render_tailwind_header, render_kpi_grid, render_insight_box
+from src.ui import render_tailwind_header, render_kpi_grid, render_insight_box, apply_plotly_theme
 
 st.set_page_config(page_title="Doctor Workload | MetroCare", page_icon="👨‍⚕️", layout="wide")
 
@@ -103,11 +103,10 @@ with col1:
         fig_util.add_vline(x=95.0, line_dash="dash", line_color="#E53E3E", annotation_text="Burnout (95%)", annotation_position="top right")
         fig_util.add_vline(x=50.0, line_dash="dash", line_color="#F59E0B", annotation_text="Underutilized (50%)", annotation_position="bottom right")
         
+        apply_plotly_theme(fig_util, height=420)
         fig_util.update_layout(
             xaxis=dict(title="Utilization (% of Scheduled Time)", range=[0, max(110, chart_data['utilization_pct'].max() + 10)]),
-            yaxis=dict(title="Doctor"),
-            margin=dict(l=20, r=20, t=30, b=20),
-            height=420
+            yaxis=dict(title="Doctor")
         )
         st.plotly_chart(fig_util, use_container_width=True)
 
@@ -132,11 +131,10 @@ with col2:
         layer="below", line_width=0,
         annotation_text="Morning Walk-in Surge", annotation_position="top left"
     )
+    apply_plotly_theme(fig_line, height=420)
     fig_line.update_layout(
         xaxis=dict(dtick=2),
-        legend=dict(orientation="h", yanchor="bottom", y=1.02, xanchor="right", x=1),
-        margin=dict(l=20, r=20, t=30, b=20),
-        height=420
+        legend=dict(orientation="h", yanchor="bottom", y=1.02, xanchor="right", x=1)
     )
     st.plotly_chart(fig_line, use_container_width=True)
 
