@@ -5,8 +5,8 @@ METROCARE HEALTH SYSTEMS — COMPLETE SOURCE CODE DOSSIER GENERATOR
 Student:      US Samrat (Roll No: 2500320140158)
 Program:      Master of Computer Applications (MCA 2nd Year, 2024-2026)
 Institution:  ABES Engineering College, Ghaziabad (AKTU, Lucknow)
-Mentor:       Prof. Anjali Pandey (Department of Computer Applications)
-Project:      Healthcare Patient Visit Analysis & Operational Intelligence Platform
+Mentor:       Mr Dinesh Sereno
+Project:      Healthcare Patient Visit Analysis & Operational Intelligence Platform (PO98)
 Repository:   https://github.com/ksamrat629-cell/College-mini-Project-.git
 Deliverables: docs/Full_Project_Codebase.pdf & docs/MCA_Project_Codebase_US_Samrat.pdf
 =============================================================================
@@ -92,7 +92,7 @@ class NumberedCanvas(canvas.Canvas):
         self.setFillColor(COLOR_MUTED_GREY)
         self.drawString(165, 815, "|  Department of Computer Applications (MCA) — Project Dossier")
 
-        self.drawRightString(559, 815, "PRJ-HVA-2026 : Complete Source Code")
+        self.drawRightString(559, 815, "PO98 : Complete Source Code")
 
         # Top Header Dividing Line
         self.setStrokeColor(COLOR_PRIMARY_BURGUNDY)
@@ -107,7 +107,7 @@ class NumberedCanvas(canvas.Canvas):
 
         self.setFont("Helvetica", 7.5)
         self.setFillColor(COLOR_MUTED_GREY)
-        self.drawString(36, 23, "US Samrat (Roll: 2500320140158) | Mentor: Prof. Anjali Pandey | ABES Ghaziabad")
+        self.drawString(36, 23, "US Samrat (Roll: 2500320140158) | Mentor: Mr Dinesh Sereno | ABES Ghaziabad")
         
         page_str = f"Page {page_num} of {total_pages}"
         self.setFont("Helvetica-Bold", 7.5)
@@ -578,7 +578,7 @@ def build_codebase_pdf(output_pdf_path: str):
     meta_data = [
         [
             Paragraph("<b>Project ID:</b>", style_meta_label),
-            Paragraph("PRJ-HVA-2026", style_meta_val),
+            Paragraph("PO98", style_meta_val),
             Paragraph("<b>Academic Programme:</b>", style_meta_label),
             Paragraph("MCA 2nd Year (Batch 2024–2026)", style_meta_val)
         ],
@@ -589,8 +589,8 @@ def build_codebase_pdf(output_pdf_path: str):
             Paragraph("<b>2500320140158</b>", style_meta_val)
         ],
         [
-            Paragraph("<b>Faculty Mentor:</b>", style_meta_label),
-            Paragraph("Prof. Anjali Pandey (Asst. Professor, MCA)", style_meta_val),
+            Paragraph("<b>Mentor:</b>", style_meta_label),
+            Paragraph("Mr Dinesh Sereno", style_meta_val),
             Paragraph("<b>Batch / Section:</b>", style_meta_label),
             Paragraph("ABES_OND26_MCA", style_meta_val)
         ],
@@ -668,7 +668,7 @@ def build_codebase_pdf(output_pdf_path: str):
     sig_data = [
         [
             Paragraph("<b>US Samrat</b><br/>MCA 2nd Year Student<br/>Roll No: 2500320140158", style_meta_val),
-            Paragraph("<b>Prof. Anjali Pandey</b><br/>Project Faculty Mentor<br/>Department of Computer Applications", style_meta_val),
+            Paragraph("<b>Mr Dinesh Sereno</b><br/>Project Mentor", style_meta_val),
             Paragraph("<b>Head of Department</b><br/>Department of Computer Applications<br/>ABES Engineering College", style_meta_val)
         ]
     ]
